@@ -1,6 +1,15 @@
 package animals;
 
+import randomChance.randomChance;
+
 public abstract class Animal {
+
+   // Default constructor
+   public Animal(){
+      super();
+
+      rand = new randomChance();
+   }
 
    public void sleep(){
       String output = this.getName() + " the " + this.getType() + " sleeps.";
@@ -27,4 +36,10 @@ public abstract class Animal {
    public abstract String getName();
 
    public abstract String getType();
+
+   protected randomChance rand;
+
+   protected void setRandomChance(randomChance r){
+      rand = r;
+   }
 }
