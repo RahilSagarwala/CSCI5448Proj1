@@ -10,17 +10,24 @@ public class Tiger extends Feline {
 
    @Override
    public void makeNoise() {
+      String output = this.getName() + " the " + this.getType() + " chuffs.";
+      System.out.println(output);
+   }
 
+   @Override
+   public void roam() {
+      String output = this.getName() + " the " + this.getType() + " stalks.";
+      System.out.println(output);
    }
 
    @Override
    public String getName() {
-      return null;
+      return myName;
    }
 
    @Override
    public String getType() {
-      return null;
+      return myType;
    }
 
    // Member variables
