@@ -36,7 +36,7 @@ class RhinoTest {
       r.setRet(0);
       rhino.setRandomChance(r);
       rhino.sleep();
-      assertEquals("Name the Rhino roams." + nL, sOut.toString());
+      assertEquals("Name the Rhino sleeps." + nL, sOut.toString());
    }
 
    @org.junit.jupiter.api.Test
@@ -44,7 +44,7 @@ class RhinoTest {
       r.setRet(1);
       rhino.setRandomChance(r);
       rhino.sleep();
-      assertEquals("Name the Rhino roams." + nL, sOut.toString());
+      assertEquals("Name the Rhino sleeps." + nL, sOut.toString());
    }
 
    @org.junit.jupiter.api.Test
@@ -52,7 +52,7 @@ class RhinoTest {
       r.setRet(2);
       rhino.setRandomChance(r);
       rhino.sleep();
-      assertEquals("Name the Rhino roams." + nL, sOut.toString());
+      assertEquals("Name the Rhino sleeps." + nL, sOut.toString());
    }
 
    @org.junit.jupiter.api.Test
@@ -60,7 +60,7 @@ class RhinoTest {
       r.setRet(3);
       rhino.setRandomChance(r);
       rhino.sleep();
-      assertEquals("Rhino make noise." + nL, sOut.toString());
+      assertEquals("Name the Rhino sleeps." + nL, sOut.toString());
    }
 
    @org.junit.jupiter.api.Test
@@ -68,7 +68,7 @@ class RhinoTest {
       r.setRet(4);
       rhino.setRandomChance(r);
       rhino.sleep();
-      assertEquals("Rhino make noise." + nL, sOut.toString());
+      assertEquals("Name the Rhino sleeps." + nL, sOut.toString());
    }
 
    @org.junit.jupiter.api.Test
@@ -76,7 +76,7 @@ class RhinoTest {
       r.setRet(5);
       rhino.setRandomChance(r);
       rhino.sleep();
-      assertEquals("Rhino make noise." + nL, sOut.toString());
+      assertEquals("Name the Rhino sleeps." + nL, sOut.toString());
    }
 
    @org.junit.jupiter.api.Test

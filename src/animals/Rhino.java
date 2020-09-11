@@ -7,10 +7,7 @@ public class Rhino extends Pachyderm {
     public Rhino(){
         super();
         //TODO: Implement name generation
-        String[] names = {};
-        Random random = new Random();
-        int randomInt = random.nextInt(10);
-        myName = names[randomInt];
+        myName = "Name";
     }
 
     @Override
