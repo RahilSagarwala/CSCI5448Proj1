@@ -1,11 +1,17 @@
 package animals;
 
+import java.util.Random;
+
 public class Tiger extends Feline {
    // Constructor
    public Tiger(){
       super();
-      //TODO: Implement name generation
-      myName = "Name";
+      //name generation
+      String[] names = {"Tina", "Timmy", "T", "Tom", "Tony", "Tim", "T-Dawg",
+    		  "Tiny", "Tommy", "TT"};
+      Random random = new Random();
+      int randomInt = random.nextInt(10);
+      myName = names[randomInt];
    }
 
    @Override
