@@ -11,6 +11,10 @@ class CanineTest {
    randomChanceStub r = new randomChanceStub();
    Animal animal = new CanineStub();
 
+   // Using line separator as found in
+   // https://stackoverflow.com/questions/4008223/print-in-new-line-java/42626516
+   String nL = System.getProperty("line.separator");
+
    // Capture standard out code used from:
    // https://stackoverflow.com/questions/1119385/junit-test-for-system-out-println
    private final ByteArrayOutputStream sOut = new ByteArrayOutputStream();
@@ -31,7 +35,7 @@ class CanineTest {
       r.setRet(0);
       animal.setRandomChance(r);
       animal.roam();
-      assertEquals("Name the Canine digs.\n", sOut.toString());
+      assertEquals("Name the Canine digs." + nL, sOut.toString());
    }
 
    @org.junit.jupiter.api.Test
@@ -39,7 +43,7 @@ class CanineTest {
       r.setRet(1);
       animal.setRandomChance(r);
       animal.roam();
-      assertEquals("Name the Canine roams.\n", sOut.toString());
+      assertEquals("Name the Canine roams." + nL, sOut.toString());
    }
 
    @org.junit.jupiter.api.Test
@@ -47,7 +51,7 @@ class CanineTest {
       r.setRet(2);
       animal.setRandomChance(r);
       animal.roam();
-      assertEquals("Name the Canine roams.\n", sOut.toString());
+      assertEquals("Name the Canine roams." + nL, sOut.toString());
    }
 
    @org.junit.jupiter.api.Test
@@ -55,6 +59,6 @@ class CanineTest {
       r.setRet(3);
       animal.setRandomChance(r);
       animal.roam();
-      assertEquals("Name the Canine roams.\n", sOut.toString());
+      assertEquals("Name the Canine roams." + nL, sOut.toString());
    }
 }

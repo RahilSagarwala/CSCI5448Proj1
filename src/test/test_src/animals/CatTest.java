@@ -13,6 +13,10 @@ class CatTest {
    randomChanceStub r = new randomChanceStub();
    Animal cat = new Cat();
 
+   // Using line separator as found in
+   // https://stackoverflow.com/questions/4008223/print-in-new-line-java/42626516
+   String nL = System.getProperty("line.separator");
+
    // Capture standard out code used from:
    // https://stackoverflow.com/questions/1119385/junit-test-for-system-out-println
    private final ByteArrayOutputStream sOut = new ByteArrayOutputStream();
@@ -31,7 +35,7 @@ class CatTest {
    @Test
    void makeNoise() {
       cat.makeNoise();
-      assertEquals("Name the Cat purrrrs.\n", sOut.toString());
+      assertEquals("Name the Cat purrrrs." + nL, sOut.toString());
    }
 
    @org.junit.jupiter.api.Test
@@ -39,7 +43,7 @@ class CatTest {
       r.setRet(4);
       cat.setRandomChance(r);
       cat.sleep();
-      assertEquals("Name the Cat purrrrs.\n", sOut.toString());
+      assertEquals("Name the Cat purrrrs." + nL, sOut.toString());
    }
 
    @org.junit.jupiter.api.Test
@@ -47,7 +51,7 @@ class CatTest {
       r.setRet(8);
       cat.setRandomChance(r);
       cat.sleep();
-      assertEquals("Name the Cat sleeps.\n", sOut.toString());
+      assertEquals("Name the Cat sleeps." + nL, sOut.toString());
    }
 
    @org.junit.jupiter.api.Test
@@ -55,6 +59,6 @@ class CatTest {
       r.setRet(1);
       cat.setRandomChance(r);
       cat.sleep();
-      assertEquals("Name the Cat roams.\n", sOut.toString());
+      assertEquals("Name the Cat roams." + nL, sOut.toString());
    }
 }

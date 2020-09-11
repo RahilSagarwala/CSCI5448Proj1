@@ -12,6 +12,10 @@ class FelineTest {
    randomChanceStub r = new randomChanceStub();
    Animal fel = new FelineStub();
 
+   // Using line separator as found in
+   // https://stackoverflow.com/questions/4008223/print-in-new-line-java/42626516
+   String nL = System.getProperty("line.separator");
+
    // Capture standard out code used from:
    // https://stackoverflow.com/questions/1119385/junit-test-for-system-out-println
    private final ByteArrayOutputStream sOut = new ByteArrayOutputStream();
@@ -32,7 +36,7 @@ class FelineTest {
       r.setRet(0);
       fel.setRandomChance(r);
       fel.sleep();
-      assertEquals("Name the Feline roams.\n", sOut.toString());
+      assertEquals("Name the Feline roams." + nL, sOut.toString());
    }
 
    @org.junit.jupiter.api.Test
@@ -40,7 +44,7 @@ class FelineTest {
       r.setRet(1);
       fel.setRandomChance(r);
       fel.sleep();
-      assertEquals("Name the Feline roams.\n", sOut.toString());
+      assertEquals("Name the Feline roams." + nL, sOut.toString());
    }
 
    @org.junit.jupiter.api.Test
@@ -48,7 +52,7 @@ class FelineTest {
       r.setRet(2);
       fel.setRandomChance(r);
       fel.sleep();
-      assertEquals("Name the Feline roams.\n", sOut.toString());
+      assertEquals("Name the Feline roams." + nL, sOut.toString());
    }
 
    @org.junit.jupiter.api.Test
@@ -56,7 +60,7 @@ class FelineTest {
       r.setRet(3);
       fel.setRandomChance(r);
       fel.sleep();
-      assertEquals("Feline make noise.\n", sOut.toString());
+      assertEquals("Feline make noise." + nL, sOut.toString());
    }
 
    @org.junit.jupiter.api.Test
@@ -64,7 +68,7 @@ class FelineTest {
       r.setRet(4);
       fel.setRandomChance(r);
       fel.sleep();
-      assertEquals("Feline make noise.\n", sOut.toString());
+      assertEquals("Feline make noise." + nL, sOut.toString());
    }
 
    @org.junit.jupiter.api.Test
@@ -72,7 +76,7 @@ class FelineTest {
       r.setRet(5);
       fel.setRandomChance(r);
       fel.sleep();
-      assertEquals("Feline make noise.\n", sOut.toString());
+      assertEquals("Feline make noise." + nL, sOut.toString());
    }
 
    @org.junit.jupiter.api.Test
@@ -80,7 +84,7 @@ class FelineTest {
       r.setRet(6);
       fel.setRandomChance(r);
       fel.sleep();
-      assertEquals("Name the Feline sleeps.\n", sOut.toString());
+      assertEquals("Name the Feline sleeps." + nL, sOut.toString());
    }
 
    @org.junit.jupiter.api.Test
@@ -88,7 +92,7 @@ class FelineTest {
       r.setRet(7);
       fel.setRandomChance(r);
       fel.sleep();
-      assertEquals("Name the Feline sleeps.\n", sOut.toString());
+      assertEquals("Name the Feline sleeps." + nL, sOut.toString());
    }
 
    @org.junit.jupiter.api.Test
@@ -96,7 +100,7 @@ class FelineTest {
       r.setRet(8);
       fel.setRandomChance(r);
       fel.sleep();
-      assertEquals("Name the Feline sleeps.\n", sOut.toString());
+      assertEquals("Name the Feline sleeps." + nL, sOut.toString());
    }
 
    @org.junit.jupiter.api.Test
@@ -104,6 +108,6 @@ class FelineTest {
       r.setRet(9);
       fel.setRandomChance(r);
       fel.sleep();
-      assertEquals("Name the Feline sleeps.\n", sOut.toString());
+      assertEquals("Name the Feline sleeps." + nL, sOut.toString());
    }
 }
