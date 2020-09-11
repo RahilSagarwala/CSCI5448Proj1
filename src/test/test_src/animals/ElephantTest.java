@@ -36,7 +36,7 @@ class ElephantTest {
       r.setRet(0);
       elephant.setRandomChance(r);
       elephant.sleep();
-      assertEquals("Name the Elephant roams." + nL, sOut.toString());
+      assertEquals("Name the Elephant sleeps." + nL, sOut.toString());
    }
 
    @org.junit.jupiter.api.Test
@@ -44,7 +44,7 @@ class ElephantTest {
       r.setRet(1);
       elephant.setRandomChance(r);
       elephant.sleep();
-      assertEquals("Name the Elephant roams." + nL, sOut.toString());
+      assertEquals("Name the Elephant sleeps." + nL, sOut.toString());
    }
 
    @org.junit.jupiter.api.Test
@@ -52,7 +52,7 @@ class ElephantTest {
       r.setRet(2);
       elephant.setRandomChance(r);
       elephant.sleep();
-      assertEquals("Name the Elephant roams." + nL, sOut.toString());
+      assertEquals("Name the Elephant sleeps." + nL, sOut.toString());
    }
 
    @org.junit.jupiter.api.Test
@@ -60,7 +60,7 @@ class ElephantTest {
       r.setRet(3);
       elephant.setRandomChance(r);
       elephant.sleep();
-      assertEquals("Elephant make noise." + nL, sOut.toString());
+      assertEquals("Name the Elephant sleeps." + nL, sOut.toString());
    }
 
    @org.junit.jupiter.api.Test
@@ -68,7 +68,7 @@ class ElephantTest {
       r.setRet(4);
       elephant.setRandomChance(r);
       elephant.sleep();
-      assertEquals("Elephant make noise." + nL, sOut.toString());
+      assertEquals("Name the Elephant sleeps." + nL, sOut.toString());
    }
 
    @org.junit.jupiter.api.Test
@@ -76,7 +76,7 @@ class ElephantTest {
       r.setRet(5);
       elephant.setRandomChance(r);
       elephant.sleep();
-      assertEquals("Elephant make noise." + nL, sOut.toString());
+      assertEquals("Name the Elephant sleeps." + nL, sOut.toString());
    }
 
    @org.junit.jupiter.api.Test

@@ -7,11 +7,7 @@ public class Dog extends Canine {
     public Dog(){
         super();
         //TODO: Implement name generation
-        String[] names = {"Chloe", "Cutie", "Casey", "Coco", "Chelsie", "Charles",
-                "Charlie", "CeCe", "CiCi", "C-Dawg"};
-        Random random = new Random();
-        int randomInt = random.nextInt(10);
-        myName = names[randomInt];
+        myName = "Name";
     }
 
     @Override

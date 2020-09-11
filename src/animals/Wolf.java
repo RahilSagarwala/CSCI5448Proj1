@@ -9,11 +9,7 @@ public class Wolf extends Canine {
     public Wolf() {
         super();
         //TODO: Implement name generation
-        String[] names = {"Chloe", "Cutie", "Casey", "Coco", "Chelsie", "Charles",
-                "Charlie", "CeCe", "CiCi", "C-Dawg"};
-        Random random = new Random();
-        int randomInt = random.nextInt(10);
-        myName = names[randomInt];
+        myName = "Name";
     }
 
     @Override

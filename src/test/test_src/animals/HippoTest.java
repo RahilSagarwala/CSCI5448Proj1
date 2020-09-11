@@ -36,7 +36,7 @@ class HippoTest {
       r.setRet(0);
       hippo.setRandomChance(r);
       hippo.sleep();
-      assertEquals("Name the Hippo roams." + nL, sOut.toString());
+      assertEquals("Name the Hippo sleeps." + nL, sOut.toString());
    }
 
    @org.junit.jupiter.api.Test
@@ -44,7 +44,7 @@ class HippoTest {
       r.setRet(1);
       hippo.setRandomChance(r);
       hippo.sleep();
-      assertEquals("Name the Hippo roams." + nL, sOut.toString());
+      assertEquals("Name the Hippo sleeps." + nL, sOut.toString());
    }
 
    @org.junit.jupiter.api.Test
@@ -52,7 +52,7 @@ class HippoTest {
       r.setRet(2);
       hippo.setRandomChance(r);
       hippo.sleep();
-      assertEquals("Name the Hippo roams." + nL, sOut.toString());
+      assertEquals("Name the Hippo sleeps." + nL, sOut.toString());
    }
 
    @org.junit.jupiter.api.Test
@@ -60,7 +60,7 @@ class HippoTest {
       r.setRet(3);
       hippo.setRandomChance(r);
       hippo.sleep();
-      assertEquals("Hippo make noise." + nL, sOut.toString());
+      assertEquals("Name the Hippo sleeps." + nL, sOut.toString());
    }
 
    @org.junit.jupiter.api.Test
@@ -68,7 +68,7 @@ class HippoTest {
       r.setRet(4);
       hippo.setRandomChance(r);
       hippo.sleep();
-      assertEquals("Hippo make noise." + nL, sOut.toString());
+      assertEquals("Name the Hippo sleeps." + nL, sOut.toString());
    }
 
    @org.junit.jupiter.api.Test
@@ -76,7 +76,7 @@ class HippoTest {
       r.setRet(5);
       hippo.setRandomChance(r);
       hippo.sleep();
-      assertEquals("Hippo make noise." + nL, sOut.toString());
+      assertEquals("Name the Hippo sleeps." + nL, sOut.toString());
    }
 
    @org.junit.jupiter.api.Test
