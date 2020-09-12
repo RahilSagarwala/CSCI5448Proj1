@@ -1,5 +1,6 @@
 package animals;
 
+import nameGenerator.nameGenerator;
 import org.junit.jupiter.params.shadow.com.univocity.parsers.annotations.EnumOptions;
 
 import java.util.Random;
@@ -10,6 +11,13 @@ public class Wolf extends Canine {
         super();
         //TODO: Implement name generation
         myName = "Name";
+    }
+
+    public Wolf(nameGenerator ng){
+        super();
+
+        // Get unique name
+        myName = ng.getUniqueName(myType);
     }
 
     @Override

@@ -1,6 +1,6 @@
 package animals;
 
-import java.util.Random;
+import nameGenerator.nameGenerator;
 
 public class Tiger extends Feline {
    // Constructor
@@ -8,6 +8,13 @@ public class Tiger extends Feline {
       super();
       //name generation
       myName = "Name";
+   }
+
+   public Tiger(nameGenerator ng){
+      super();
+
+      // Get unique name
+      myName = ng.getUniqueName(myType);
    }
 
    @Override

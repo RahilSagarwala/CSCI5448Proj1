@@ -1,5 +1,7 @@
 package animals;
 
+import nameGenerator.nameGenerator;
+
 import java.util.Random;
 
 public class Dog extends Canine {
@@ -8,6 +10,13 @@ public class Dog extends Canine {
         super();
         //TODO: Implement name generation
         myName = "Name";
+    }
+
+    public Dog(nameGenerator ng){
+        super();
+
+        // Get unique name
+        myName = ng.getUniqueName(myType);
     }
 
     @Override

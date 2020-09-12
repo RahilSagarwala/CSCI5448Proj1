@@ -1,5 +1,7 @@
 package animals;
 
+import nameGenerator.nameGenerator;
+
 import java.util.Random;
 
 public class Rhino extends Pachyderm {
@@ -8,6 +10,13 @@ public class Rhino extends Pachyderm {
         super();
         //TODO: Implement name generation
         myName = "Name";
+    }
+
+    public Rhino(nameGenerator ng){
+        super();
+
+        // Get unique name
+        myName = ng.getUniqueName(myType);
     }
 
     @Override
