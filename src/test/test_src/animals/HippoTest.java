@@ -1,5 +1,6 @@
 package animals;
 
+import nameGenerator.nameGenerator;
 import randomChance.randomChance;
 import randomChance.randomChanceStub;
 
@@ -109,5 +110,13 @@ class HippoTest {
       hippo.setRandomChance(r);
       hippo.sleep();
       assertEquals("Name the Hippo sleeps." + nL, sOut.toString());
+   }
+
+   @org.junit.jupiter.api.Test
+   void hippo_name_starts_with_h() {
+      nameGenerator ng = new nameGenerator();
+      Animal h = new Hippo(ng);
+      String firstLet = Character.toString(h.getName().charAt(0));
+      assertTrue(firstLet.equalsIgnoreCase("h"));
    }
 }

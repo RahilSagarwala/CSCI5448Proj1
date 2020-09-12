@@ -1,5 +1,6 @@
 package animals;
 
+import nameGenerator.nameGenerator;
 import randomChance.randomChance;
 import randomChance.randomChanceStub;
 
@@ -109,5 +110,13 @@ class ElephantTest {
       elephant.setRandomChance(r);
       elephant.sleep();
       assertEquals("Name the Elephant sleeps." + nL, sOut.toString());
+   }
+
+   @org.junit.jupiter.api.Test
+   void elephant_name_starts_with_e() {
+      nameGenerator ng = new nameGenerator();
+      Animal e = new Elephant(ng);
+      String firstLet = Character.toString(e.getName().charAt(0));
+      assertTrue(firstLet.equalsIgnoreCase("e"));
    }
 }
