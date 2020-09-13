@@ -37,6 +37,7 @@ public class Zoo_Main {
       }
 
       //Print names and types of all the animals
+      //TODO: Remove this print section after employee added.
       for (Animal a : zooAnimals) {
          String output = a.getName() + " the " + a.getType() + " is in the zoo.";
          System.out.println(output);
