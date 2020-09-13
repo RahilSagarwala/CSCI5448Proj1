@@ -2,6 +2,7 @@ package animals;
 
 import java.util.Random;
 
+//Tiger and Cat classes exhibit polymorphism as they are both subclasses of Feline
 public class Cat extends Feline {
    // Constructor
    public Cat(){

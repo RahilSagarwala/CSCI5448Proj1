@@ -2,6 +2,7 @@ package animals;
 
 import java.util.Random;
 
+//Rhino, Hippo, and Eelephant classes exhibit polymorphism as they are both subclasses of Pachyderm
 public class Hippo extends Pachyderm {
 
     public Hippo(){

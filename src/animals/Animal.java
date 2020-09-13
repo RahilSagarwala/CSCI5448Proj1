@@ -2,6 +2,7 @@ package animals;
 
 import randomChance.randomChance;
 
+//OO term abstract class
 public abstract class Animal {
 
    // Default constructor

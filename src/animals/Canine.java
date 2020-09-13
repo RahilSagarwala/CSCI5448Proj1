@@ -1,5 +1,11 @@
 package animals;
 
+//OO term abstract class
+//override Animal's methods and encapsulate based off of species
+
+/*When a Dog is given the exercise command by the Zookeeper,
+ *there is a 25% chance the dog will dig instead of roaming.
+ */
 public abstract class Canine extends Animal{
 
     @Override

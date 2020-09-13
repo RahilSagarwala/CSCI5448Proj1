@@ -1,5 +1,11 @@
 package animals;
 
+//OO term abstract class
+//override Animal's methods and encapsulate based off of species
+
+/*When a Feline is given a sleep command, there is a 30% chance it will roam instead, 
+ *a 30% chance it will make noise, and a 40% chance it will sleep.
+ */
 public abstract class Feline extends Animal{
 
    @Override

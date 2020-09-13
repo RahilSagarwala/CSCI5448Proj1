@@ -1,5 +1,11 @@
 package animals;
 
+//OO term abstract class
+//override Animal's methods and encapsulate based off of species
+
+/*When a Pachyderm is given an exercise command, 
+*there is a 25% chance it will charge instead of roam.
+*/
 public abstract class Pachyderm extends Animal{
 
     @Override

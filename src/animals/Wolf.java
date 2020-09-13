@@ -4,6 +4,7 @@ import org.junit.jupiter.params.shadow.com.univocity.parsers.annotations.EnumOpt
 
 import java.util.Random;
 
+//Dog and Wolf classes exhibit polymorphism as they are both subclasses of Canine
 public class Wolf extends Canine {
 
     public Wolf() {

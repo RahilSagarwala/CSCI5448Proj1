@@ -2,6 +2,7 @@ package animals;
 
 import java.util.Random;
 
+//Dog and Wolf classes exhibit polymorphism as they are both subclasses of Canine
 public class Dog extends Canine {
 
     public Dog(){
