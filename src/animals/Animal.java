@@ -37,7 +37,9 @@ public abstract class Animal {
    public abstract String getName();
 
    public abstract String getType();
-
+   
+   
+   //encapsulated variable and methods can only be accessed by subclasses of Animal
    protected randomChance rand;
 
    protected void setRandomChance(randomChance r){
