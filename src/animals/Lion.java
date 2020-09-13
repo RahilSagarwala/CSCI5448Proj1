@@ -1,11 +1,20 @@
 package animals;
 
+import nameGenerator.nameGenerator;
+
 public class Lion extends Feline {
 
    public Lion(){
       super();
       //TODO: Implement Name generator
       myName = "Name";
+   }
+
+   public Lion(nameGenerator ng){
+      super();
+
+      // Get unique name
+      myName = ng.getUniqueName(myType);
    }
 
    // Implement the abstract method from the Animal class

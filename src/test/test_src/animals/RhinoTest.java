@@ -1,5 +1,6 @@
 package animals;
 
+import nameGenerator.nameGenerator;
 import randomChance.randomChance;
 import randomChance.randomChanceStub;
 
@@ -109,5 +110,13 @@ class RhinoTest {
       rhino.setRandomChance(r);
       rhino.sleep();
       assertEquals("Name the Rhino sleeps." + nL, sOut.toString());
+   }
+
+   @org.junit.jupiter.api.Test
+   void rhino_name_starts_with_r() {
+      nameGenerator ng = new nameGenerator();
+      Animal r = new Rhino(ng);
+      String firstLet = Character.toString(r.getName().charAt(0));
+      assertTrue(firstLet.equalsIgnoreCase("r"));
    }
 }

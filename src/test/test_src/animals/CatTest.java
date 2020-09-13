@@ -1,5 +1,6 @@
 package animals;
 
+import nameGenerator.nameGenerator;
 import org.junit.jupiter.api.Test;
 import randomChance.randomChanceStub;
 
@@ -60,5 +61,13 @@ class CatTest {
       cat.setRandomChance(r);
       cat.sleep();
       assertEquals("Name the Cat roams." + nL, sOut.toString());
+   }
+
+   @org.junit.jupiter.api.Test
+   void cat_name_starts_with_c() {
+      nameGenerator ng = new nameGenerator();
+      Animal c = new Cat(ng);
+      String firstLet = Character.toString(c.getName().charAt(0));
+      assertTrue(firstLet.equalsIgnoreCase("c"));
    }
 }

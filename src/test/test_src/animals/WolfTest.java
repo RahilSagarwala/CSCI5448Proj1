@@ -7,6 +7,9 @@ import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import nameGenerator.nameGenerator;
 
 class WolfTest {
 
@@ -52,5 +55,13 @@ class WolfTest {
       wolf.setRandomChance(r);
       wolf.roam();
       assertEquals("Name the Wolf roams." + nL, sOut.toString());
+   }
+
+   @org.junit.jupiter.api.Test
+   void wolf_name_starts_with_w() {
+      nameGenerator ng = new nameGenerator();
+      Animal w = new Wolf(ng);
+      String firstLet = Character.toString(w.getName().charAt(0));
+      assertTrue(firstLet.equalsIgnoreCase("w"));
    }
 }

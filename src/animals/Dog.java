@@ -1,5 +1,7 @@
 package animals;
 
+import nameGenerator.nameGenerator;
+
 import java.util.Random;
 
 //Dog and Wolf classes exhibit polymorphism as they are both subclasses of Canine
@@ -9,6 +11,13 @@ public class Dog extends Canine {
         super();
         //TODO: Implement name generation
         myName = "Name";
+    }
+
+    public Dog(nameGenerator ng){
+        super();
+
+        // Get unique name
+        myName = ng.getUniqueName(myType);
     }
 
     @Override

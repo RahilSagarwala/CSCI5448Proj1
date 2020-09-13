@@ -1,5 +1,6 @@
 package animals;
 
+import nameGenerator.nameGenerator;
 import org.junit.jupiter.api.Test;
 import randomChance.randomChanceStub;
 
@@ -7,6 +8,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class DogTest {
 
@@ -50,5 +52,13 @@ class DogTest {
       dog.setRandomChance(r);
       dog.roam();
       assertEquals("Name the Dog roams." + nL, sOut.toString());
+   }
+
+   @org.junit.jupiter.api.Test
+   void dog_name_starts_with_d() {
+      nameGenerator ng = new nameGenerator();
+      Animal d = new Dog(ng);
+      String firstLet = Character.toString(d.getName().charAt(0));
+      assertTrue(firstLet.equalsIgnoreCase("d"));
    }
 }
