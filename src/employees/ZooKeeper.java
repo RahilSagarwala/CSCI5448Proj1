@@ -1,5 +1,7 @@
 package employees;
 
+import animals.*;
+
 public class ZooKeeper extends ZooEmployee {
 	
 	public ZooKeeper() {

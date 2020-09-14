@@ -1,6 +1,7 @@
 package animals;
 
 import randomChance.randomChance;
+import employees.*;
 
 //OO term abstract class
 public abstract class Animal {
