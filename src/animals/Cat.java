@@ -7,13 +7,13 @@ import java.util.Random;
 //Tiger and Cat classes exhibit polymorphism as they are both subclasses of Feline
 public class Cat extends Feline {
    // Constructor
-   public Cat(){
+   public Cat() {
       super();
       //TODO: Implement name generation
       myName = "Name";
    }
 
-   public Cat(nameGenerator ng){
+   public Cat(nameGenerator ng) {
       super();
 
       // Get unique name

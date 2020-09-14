@@ -1,6 +1,5 @@
 package animals;
 
-import randomChance.randomChance;
 import randomChance.randomChanceStub;
 
 import java.io.ByteArrayOutputStream;
@@ -22,12 +21,12 @@ class PachydermTest {
    private final PrintStream oOut = System.out;
 
    @org.junit.jupiter.api.BeforeEach
-   public void configStream(){
+   public void configStream() {
       System.setOut(new PrintStream(sOut));
    }
 
    @org.junit.jupiter.api.AfterEach
-   public void restoreStream(){
+   public void restoreStream() {
       System.setOut(new PrintStream(oOut));
    }
 
@@ -76,7 +75,8 @@ class PachydermTest {
       r.setRet(5);
       pachyderm.setRandomChance(r);
       pachyderm.sleep();
-      assertEquals("Name the Pachyderm sleeps." + nL, sOut.toString());   }
+      assertEquals("Name the Pachyderm sleeps." + nL, sOut.toString());
+   }
 
    @org.junit.jupiter.api.Test
    void sleep_rand_6() {

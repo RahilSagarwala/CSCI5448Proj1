@@ -25,10 +25,12 @@ class DogTest {
    private final PrintStream oOut = System.out;
 
    @org.junit.jupiter.api.BeforeEach
-   public void configStream(){ System.setOut(new PrintStream(sOut)); }
+   public void configStream() {
+      System.setOut(new PrintStream(sOut));
+   }
 
    @org.junit.jupiter.api.AfterEach
-   public void restoreStream(){
+   public void restoreStream() {
       System.setOut(new PrintStream(oOut));
    }
 

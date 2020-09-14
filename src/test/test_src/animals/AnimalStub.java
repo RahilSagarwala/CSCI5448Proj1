@@ -1,6 +1,6 @@
 package animals;
 
-public class AnimalStub extends Animal{
+public class AnimalStub extends Animal {
    @Override
    public void makeNoise() {
    }

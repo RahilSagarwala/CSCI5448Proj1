@@ -5,13 +5,13 @@ import nameGenerator.nameGenerator;
 //Tiger and Cat classes exhibit polymorphism as they are both subclasses of Feline
 public class Tiger extends Feline {
    // Constructor
-   public Tiger(){
+   public Tiger() {
       super();
       //name generation
       myName = "Name";
    }
 
-   public Tiger(nameGenerator ng){
+   public Tiger(nameGenerator ng) {
       super();
 
       // Get unique name

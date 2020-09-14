@@ -4,13 +4,13 @@ import nameGenerator.nameGenerator;
 
 public class Lion extends Feline {
 
-   public Lion(){
+   public Lion() {
       super();
       //TODO: Implement Name generator
       myName = "Name";
    }
 
-   public Lion(nameGenerator ng){
+   public Lion(nameGenerator ng) {
       super();
 
       // Get unique name

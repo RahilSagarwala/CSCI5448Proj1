@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class ElephantTest {
    randomChanceStub r = new randomChanceStub();
    Animal elephant = new Elephant();
-   
+
    // Using line separator as found in
    // https://stackoverflow.com/questions/4008223/print-in-new-line-java/42626516
    String nL = System.getProperty("line.separator");
@@ -23,12 +23,12 @@ class ElephantTest {
    private final PrintStream oOut = System.out;
 
    @org.junit.jupiter.api.BeforeEach
-   public void configStream(){
+   public void configStream() {
       System.setOut(new PrintStream(sOut));
    }
 
    @org.junit.jupiter.api.AfterEach
-   public void restoreStream(){
+   public void restoreStream() {
       System.setOut(new PrintStream(oOut));
    }
 
