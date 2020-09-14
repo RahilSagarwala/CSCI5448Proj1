@@ -36,6 +36,19 @@ public class Zoo_Main {
          }
       }
 
+      //TODO: Instantiate the ZooKeeper
+
+      //TODO: Take input of the # of days to run
+
+      //TODO: Loop for the number of days, having the zookeeper
+      //      Arrive at the zoo
+      //      Wake the animals
+      //      Roll Call the animals (make noise)
+      //      Feed the animals
+      //      Exercise the animals (roam)
+      //      Put animals to sleep
+      //      leave the zoo
+
       //Print names and types of all the animals
       //TODO: Remove this print section after employee added.
       for (Animal a : zooAnimals) {
