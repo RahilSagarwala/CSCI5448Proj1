@@ -22,6 +22,11 @@ Rahil Sagarwala <br>
   - Run zoo.Zoo_Main
   
 ### Eclipse
+  -  Go to File in the top toolbar, click on new, and java project
+  -  Uncheck "use dault location"
+  -  Browse the location of the source code folder
+  -  Select the folder, click next, and add compatible Java version along with jUnit5
+  -  Click finish, right click the project and run the Zoo_Main.java as a Java application
 
 ### Command Line
 Once code is built - execute the following command: <br>
