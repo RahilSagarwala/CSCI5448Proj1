@@ -1,8 +1,12 @@
 package zoo;
 
 import animals.*;
+import employees.*;
 import nameGenerator.nameGenerator;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
@@ -12,9 +16,10 @@ import static java.lang.Class.forName;
 
 public class Zoo_Main {
    public static void main(String[] args) {
-      // TODO: add buffalo and yak to list once they are created
+      // List the different types of animals to create
       String[] animalTypes = new String[]{"animals.Cat", "animals.Dog", "animals.Elephant",
-               "animals.Hippo", "animals.Lion", "animals.Tiger", "animals.Rhino", "animals.Wolf"};
+               "animals.Hippo", "animals.Lion", "animals.Tiger", "animals.Rhino",
+               "animals.Wolf", "animals.Buffalo", "animals.Yak"};
       List<Animal> zooAnimals = new ArrayList<Animal>();
       nameGenerator ng = new nameGenerator();
 
@@ -37,10 +42,21 @@ public class Zoo_Main {
       }
 
       //TODO: Instantiate the ZooKeeper
+      //ZooKeeper joe = new ZooKeeper();
 
-      //TODO: Take input of the # of days to run
+      // Take input of the # of days to run
+      // Buffered Reader code taken from:
+      // https://www.geeksforgeeks.org/ways-to-read-input-from-console-in-java/
+      System.out.print("Enter number of days to run: ");
+      BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+      int numDays = -1;
+      try {
+         numDays = Integer.parseInt(reader.readLine());
+      } catch (IOException e) {
+         e.printStackTrace();
+      }
 
-      //TODO: Loop for the number of days, having the zookeeper
+      // Loop for the number of days, having the zookeeper
       //      Arrive at the zoo
       //      Wake the animals
       //      Roll Call the animals (make noise)
@@ -48,13 +64,12 @@ public class Zoo_Main {
       //      Exercise the animals (roam)
       //      Put animals to sleep
       //      leave the zoo
-
-      //Print names and types of all the animals
-      //TODO: Remove this print section after employee added.
-      for (Animal a : zooAnimals) {
-         String output = a.getName() + " the " + a.getType() + " is in the zoo.";
-         System.out.println(output);
+      if( numDays <= 0 ){
+         System.out.println("Error: Must enter number > 0 for the number of days to run.");
+         System.exit(1);
       }
-
+      for(int i=0; i < numDays; i++){
+         //TODO: implement usage of zookeeper.
+      }
    }
 }
