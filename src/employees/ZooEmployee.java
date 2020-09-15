@@ -1,5 +1,7 @@
 package employees;
 
+import animals.*;
+
 public abstract class ZooEmployee {
 
    //constructor
