@@ -4,7 +4,7 @@ import nameGenerator.nameGenerator;
 
 import java.util.Random;
 
-//Rhino, Hippo, and Eelephant classes exhibit polymorphism as they are both subclasses of Pachyderm
+//Rhino, Hippo, and Elephant classes exhibit polymorphism as they are both subclasses of Pachyderm
 public class Rhino extends Pachyderm {
 
    public Rhino() {
@@ -22,7 +22,7 @@ public class Rhino extends Pachyderm {
 
    @Override
    public void makeNoise() {
-      String output = this.getName() + " the " + this.getType() + "Rhiiiii.";
+      String output = this.getName() + " the " + this.getType() + " Rhiiiii.";
       System.out.println(output);
    }
 

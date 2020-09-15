@@ -22,7 +22,7 @@ public class Elephant extends Pachyderm {
 
    @Override
    public void makeNoise() {
-      String output = this.getName() + " the " + this.getType() + "Elllll.";
+      String output = this.getName() + " the " + this.getType() + " Elllll.";
       System.out.println(output);
    }
 

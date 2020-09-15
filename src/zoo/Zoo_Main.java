@@ -42,7 +42,7 @@ public class Zoo_Main {
       }
 
       //TODO: Instantiate the ZooKeeper
-      //ZooKeeper joe = new ZooKeeper();
+      ZooKeeper zk = new ZooKeeper(ng, zooAnimals);
 
       // Take input of the # of days to run
       // Buffered Reader code taken from:
@@ -70,6 +70,16 @@ public class Zoo_Main {
       }
       for(int i=0; i < numDays; i++){
          //TODO: implement usage of zookeeper.
+         int day = i + 1;
+         String output = "~~~~~~~~~~~~~~~~~ Day " + day + " ~~~~~~~~~~~~~~~~~";
+         System.out.println(output);
+         zk.arrivesAtZoo(day);
+         zk.wakeUpAnimals();
+         zk.playWithAnimals();
+         zk.feedAnimals();
+         zk.chaseAnimals();
+         zk.putAnimalsToSleep();
+         zk.leaveZoo(day);
       }
    }
 }

@@ -22,7 +22,7 @@ public class Hippo extends Pachyderm {
 
    @Override
    public void makeNoise() {
-      String output = this.getName() + " the " + this.getType() + "Hipppp.";
+      String output = this.getName() + " the " + this.getType() + " Hipppp.";
       System.out.println(output);
    }
 
