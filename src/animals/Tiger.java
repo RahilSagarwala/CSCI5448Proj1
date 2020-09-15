@@ -14,33 +14,38 @@ public class Tiger extends Feline {
    public Tiger(nameGenerator ng) {
       super();
 
-      // Get unique name
+      // Get unique name is an example of object identity since the name
+      // generator gets a unique name for each instance of an object.
       myName = ng.getUniqueName(myType);
    }
 
+   // This overridden method is an example of polymorphism
    @Override
    public void makeNoise() {
       String output = this.getName() + " the " + this.getType() + " chuffs.";
       System.out.println(output);
    }
 
+   // This overridden method is an example of polymorphism
    @Override
    public void roam() {
       String output = this.getName() + " the " + this.getType() + " stalks.";
       System.out.println(output);
    }
 
+   // This overridden method is an example of polymorphism
    @Override
    public String getName() {
       return myName;
    }
 
+   // This overridden method is an example of polymorphism
    @Override
    public String getType() {
       return myType;
    }
 
-   // Member variables
+   // Private member variables are an example of encapsulation
    private String myName;
    private static String myType = "Tiger";
 }

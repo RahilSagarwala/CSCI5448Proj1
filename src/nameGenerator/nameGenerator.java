@@ -46,7 +46,8 @@ public class nameGenerator {
       return null;
    }
 
-   // Private member variables
+   // Private member variables are an example of encapsulation. These
+   // private members hide implementation details from the end user.
    private Map<Character, String[]> nameBank;
    private HashSet<String> usedNames;
 }

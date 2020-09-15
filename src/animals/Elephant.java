@@ -2,9 +2,7 @@ package animals;
 
 import nameGenerator.nameGenerator;
 
-import java.util.Random;
-
-//Rhino, Hippo, and Eelephant classes exhibit polymorphism as they are both subclasses of Pachyderm
+//Rhino, Hippo, and Elephant classes exhibit polymorphism as they are both subclasses of Pachyderm
 public class Elephant extends Pachyderm {
 
    public Elephant() {
@@ -20,23 +18,27 @@ public class Elephant extends Pachyderm {
       myName = ng.getUniqueName(myType);
    }
 
+   // This overridden method is an example of polymorphism
    @Override
    public void makeNoise() {
       String output = this.getName() + " the " + this.getType() + " Elllll.";
       System.out.println(output);
    }
 
+   // This overridden method is an example of polymorphism
    @Override
    public String getName() {
       return myName;
    }
 
+   // This overridden method is an example of polymorphism
    @Override
    public String getType() {
       return myType;
    }
 
    // Member variables
+   // These private variables are an example of encapsulation.
    private String myName;
    private static String myType = "Elephant";
 }

@@ -1,4 +1,5 @@
-Enter number of days to run: ~~~~~~~~~~~~~~~~~ Day 1 ~~~~~~~~~~~~~~~~~
+Enter number of days to run: 7
+~~~~~~~~~~~~~~~~~ Day 1 ~~~~~~~~~~~~~~~~~
 Zane the Zoo Keeper arrives at the zoo on day 1.
 Zane the Zoo Keeper wakes up the animals they are responsible for.
 Zane the Zoo Keeper wakes up Charlie the Cat.
@@ -88,9 +89,9 @@ Charlie the Cat eats.
 Zane the Zoo Keeper feeds Chloe the Cat.
 Chloe the Cat eats.
 Zane the Zoo Keeper feeds Daniel the Dog.
-Daniel the Dog eats.
+Daniel the Dog scarfs down its food.
 Zane the Zoo Keeper feeds Dustin the Dog.
-Dustin the Dog eats.
+Dustin the Dog scarfs down its food.
 Zane the Zoo Keeper feeds Ellen the Elephant.
 Ellen the Elephant eats.
 Zane the Zoo Keeper feeds Eliana the Elephant.
@@ -112,9 +113,9 @@ Ralphie the Rhino eats.
 Zane the Zoo Keeper feeds Rahil the Rhino.
 Rahil the Rhino eats.
 Zane the Zoo Keeper feeds Walter the Wolf.
-Walter the Wolf eats.
+Walter the Wolf scarfs down its food.
 Zane the Zoo Keeper feeds Wendy the Wolf.
-Wendy the Wolf eats.
+Wendy the Wolf scarfs down its food.
 Zane the Zoo Keeper feeds Benjamin the Buffalo.
 Benjamin the Buffalo eats.
 Zane the Zoo Keeper feeds Brian the Buffalo.
@@ -133,7 +134,7 @@ Daniel the Dog roams.
 Zane the Zoo Keeper exercises Dustin the Dog.
 Dustin the Dog roams.
 Zane the Zoo Keeper exercises Ellen the Elephant.
-Ellen the Elephant roams.
+Ellen the Elephant charges.
 Zane the Zoo Keeper exercises Eliana the Elephant.
 Eliana the Elephant roams.
 Zane the Zoo Keeper exercises Hank the Hippo.
@@ -157,18 +158,18 @@ Walter the Wolf roams.
 Zane the Zoo Keeper exercises Wendy the Wolf.
 Wendy the Wolf roams.
 Zane the Zoo Keeper exercises Benjamin the Buffalo.
-Benjamin the Buffalo roams.
+Benjamin the Buffalo headbutts.
 Zane the Zoo Keeper exercises Brian the Buffalo.
 Brian the Buffalo roams.
 Zane the Zoo Keeper exercises Yasmeen the Yak.
-Yasmeen the Yak roams.
+Yasmeen the Yak headbutts.
 Zane the Zoo Keeper exercises Yolanda the Yak.
 Yolanda the Yak roams.
 Zane the Zoo Keeper puts the animals they are responsible for to sleep.
 Zane the Zoo Keeper puts Charlie the Cat to sleep.
 Charlie the Cat roams.
 Zane the Zoo Keeper puts Chloe the Cat to sleep.
-Chloe the Cat sleeps.
+Chloe the Cat purrrrs.
 Zane the Zoo Keeper puts Daniel the Dog to sleep.
 Daniel the Dog sleeps.
 Zane the Zoo Keeper puts Dustin the Dog to sleep.
@@ -184,11 +185,11 @@ Heather the Hippo sleeps.
 Zane the Zoo Keeper puts Lilly the Lion to sleep.
 Lilly the Lion sleeps.
 Zane the Zoo Keeper puts Larry the Lion to sleep.
-Larry the Lion roams.
+Larry the Lion sleeps.
 Zane the Zoo Keeper puts Tony the Tiger to sleep.
 Tony the Tiger chuffs.
 Zane the Zoo Keeper puts Tiffany the Tiger to sleep.
-Tiffany the Tiger sleeps.
+Tiffany the Tiger chuffs.
 Zane the Zoo Keeper puts Ralphie the Rhino to sleep.
 Ralphie the Rhino sleeps.
 Zane the Zoo Keeper puts Rahil the Rhino to sleep.
@@ -296,9 +297,9 @@ Charlie the Cat eats.
 Zane the Zoo Keeper feeds Chloe the Cat.
 Chloe the Cat eats.
 Zane the Zoo Keeper feeds Daniel the Dog.
-Daniel the Dog eats.
+Daniel the Dog scarfs down its food.
 Zane the Zoo Keeper feeds Dustin the Dog.
-Dustin the Dog eats.
+Dustin the Dog scarfs down its food.
 Zane the Zoo Keeper feeds Ellen the Elephant.
 Ellen the Elephant eats.
 Zane the Zoo Keeper feeds Eliana the Elephant.
@@ -320,9 +321,9 @@ Ralphie the Rhino eats.
 Zane the Zoo Keeper feeds Rahil the Rhino.
 Rahil the Rhino eats.
 Zane the Zoo Keeper feeds Walter the Wolf.
-Walter the Wolf eats.
+Walter the Wolf scarfs down its food.
 Zane the Zoo Keeper feeds Wendy the Wolf.
-Wendy the Wolf eats.
+Wendy the Wolf scarfs down its food.
 Zane the Zoo Keeper feeds Benjamin the Buffalo.
 Benjamin the Buffalo eats.
 Zane the Zoo Keeper feeds Brian the Buffalo.
@@ -341,13 +342,13 @@ Daniel the Dog roams.
 Zane the Zoo Keeper exercises Dustin the Dog.
 Dustin the Dog roams.
 Zane the Zoo Keeper exercises Ellen the Elephant.
-Ellen the Elephant charges.
+Ellen the Elephant roams.
 Zane the Zoo Keeper exercises Eliana the Elephant.
-Eliana the Elephant roams.
+Eliana the Elephant charges.
 Zane the Zoo Keeper exercises Hank the Hippo.
 Hank the Hippo roams.
 Zane the Zoo Keeper exercises Heather the Hippo.
-Heather the Hippo roams.
+Heather the Hippo charges.
 Zane the Zoo Keeper exercises Lilly the Lion.
 Lilly the Lion roams.
 Zane the Zoo Keeper exercises Larry the Lion.
@@ -359,24 +360,24 @@ Tiffany the Tiger stalks.
 Zane the Zoo Keeper exercises Ralphie the Rhino.
 Ralphie the Rhino roams.
 Zane the Zoo Keeper exercises Rahil the Rhino.
-Rahil the Rhino roams.
+Rahil the Rhino charges.
 Zane the Zoo Keeper exercises Walter the Wolf.
 Walter the Wolf roams.
 Zane the Zoo Keeper exercises Wendy the Wolf.
 Wendy the Wolf roams.
 Zane the Zoo Keeper exercises Benjamin the Buffalo.
-Benjamin the Buffalo roams.
+Benjamin the Buffalo headbutts.
 Zane the Zoo Keeper exercises Brian the Buffalo.
-Brian the Buffalo roams.
+Brian the Buffalo headbutts.
 Zane the Zoo Keeper exercises Yasmeen the Yak.
-Yasmeen the Yak roams.
+Yasmeen the Yak headbutts.
 Zane the Zoo Keeper exercises Yolanda the Yak.
-Yolanda the Yak roams.
+Yolanda the Yak headbutts.
 Zane the Zoo Keeper puts the animals they are responsible for to sleep.
 Zane the Zoo Keeper puts Charlie the Cat to sleep.
-Charlie the Cat purrrrs.
+Charlie the Cat sleeps.
 Zane the Zoo Keeper puts Chloe the Cat to sleep.
-Chloe the Cat purrrrs.
+Chloe the Cat sleeps.
 Zane the Zoo Keeper puts Daniel the Dog to sleep.
 Daniel the Dog sleeps.
 Zane the Zoo Keeper puts Dustin the Dog to sleep.
@@ -392,11 +393,11 @@ Heather the Hippo sleeps.
 Zane the Zoo Keeper puts Lilly the Lion to sleep.
 Lilly the Lion sleeps.
 Zane the Zoo Keeper puts Larry the Lion to sleep.
-Larry the Lion roars.
+Larry the Lion roams.
 Zane the Zoo Keeper puts Tony the Tiger to sleep.
 Tony the Tiger stalks.
 Zane the Zoo Keeper puts Tiffany the Tiger to sleep.
-Tiffany the Tiger stalks.
+Tiffany the Tiger sleeps.
 Zane the Zoo Keeper puts Ralphie the Rhino to sleep.
 Ralphie the Rhino sleeps.
 Zane the Zoo Keeper puts Rahil the Rhino to sleep.
@@ -504,9 +505,9 @@ Charlie the Cat eats.
 Zane the Zoo Keeper feeds Chloe the Cat.
 Chloe the Cat eats.
 Zane the Zoo Keeper feeds Daniel the Dog.
-Daniel the Dog eats.
+Daniel the Dog scarfs down its food.
 Zane the Zoo Keeper feeds Dustin the Dog.
-Dustin the Dog eats.
+Dustin the Dog scarfs down its food.
 Zane the Zoo Keeper feeds Ellen the Elephant.
 Ellen the Elephant eats.
 Zane the Zoo Keeper feeds Eliana the Elephant.
@@ -528,9 +529,9 @@ Ralphie the Rhino eats.
 Zane the Zoo Keeper feeds Rahil the Rhino.
 Rahil the Rhino eats.
 Zane the Zoo Keeper feeds Walter the Wolf.
-Walter the Wolf eats.
+Walter the Wolf scarfs down its food.
 Zane the Zoo Keeper feeds Wendy the Wolf.
-Wendy the Wolf eats.
+Wendy the Wolf scarfs down its food.
 Zane the Zoo Keeper feeds Benjamin the Buffalo.
 Benjamin the Buffalo eats.
 Zane the Zoo Keeper feeds Brian the Buffalo.
@@ -545,7 +546,7 @@ Charlie the Cat roams.
 Zane the Zoo Keeper exercises Chloe the Cat.
 Chloe the Cat roams.
 Zane the Zoo Keeper exercises Daniel the Dog.
-Daniel the Dog roams.
+Daniel the Dog digs.
 Zane the Zoo Keeper exercises Dustin the Dog.
 Dustin the Dog roams.
 Zane the Zoo Keeper exercises Ellen the Elephant.
@@ -553,7 +554,7 @@ Ellen the Elephant roams.
 Zane the Zoo Keeper exercises Eliana the Elephant.
 Eliana the Elephant roams.
 Zane the Zoo Keeper exercises Hank the Hippo.
-Hank the Hippo roams.
+Hank the Hippo charges.
 Zane the Zoo Keeper exercises Heather the Hippo.
 Heather the Hippo roams.
 Zane the Zoo Keeper exercises Lilly the Lion.
@@ -567,7 +568,7 @@ Tiffany the Tiger stalks.
 Zane the Zoo Keeper exercises Ralphie the Rhino.
 Ralphie the Rhino roams.
 Zane the Zoo Keeper exercises Rahil the Rhino.
-Rahil the Rhino charges.
+Rahil the Rhino roams.
 Zane the Zoo Keeper exercises Walter the Wolf.
 Walter the Wolf roams.
 Zane the Zoo Keeper exercises Wendy the Wolf.
@@ -575,16 +576,16 @@ Wendy the Wolf roams.
 Zane the Zoo Keeper exercises Benjamin the Buffalo.
 Benjamin the Buffalo roams.
 Zane the Zoo Keeper exercises Brian the Buffalo.
-Brian the Buffalo roams.
+Brian the Buffalo headbutts.
 Zane the Zoo Keeper exercises Yasmeen the Yak.
-Yasmeen the Yak roams.
+Yasmeen the Yak headbutts.
 Zane the Zoo Keeper exercises Yolanda the Yak.
 Yolanda the Yak roams.
 Zane the Zoo Keeper puts the animals they are responsible for to sleep.
 Zane the Zoo Keeper puts Charlie the Cat to sleep.
-Charlie the Cat sleeps.
+Charlie the Cat roams.
 Zane the Zoo Keeper puts Chloe the Cat to sleep.
-Chloe the Cat sleeps.
+Chloe the Cat roams.
 Zane the Zoo Keeper puts Daniel the Dog to sleep.
 Daniel the Dog sleeps.
 Zane the Zoo Keeper puts Dustin the Dog to sleep.
@@ -598,9 +599,9 @@ Hank the Hippo sleeps.
 Zane the Zoo Keeper puts Heather the Hippo to sleep.
 Heather the Hippo sleeps.
 Zane the Zoo Keeper puts Lilly the Lion to sleep.
-Lilly the Lion sleeps.
+Lilly the Lion roars.
 Zane the Zoo Keeper puts Larry the Lion to sleep.
-Larry the Lion sleeps.
+Larry the Lion roars.
 Zane the Zoo Keeper puts Tony the Tiger to sleep.
 Tony the Tiger sleeps.
 Zane the Zoo Keeper puts Tiffany the Tiger to sleep.
@@ -712,9 +713,9 @@ Charlie the Cat eats.
 Zane the Zoo Keeper feeds Chloe the Cat.
 Chloe the Cat eats.
 Zane the Zoo Keeper feeds Daniel the Dog.
-Daniel the Dog eats.
+Daniel the Dog scarfs down its food.
 Zane the Zoo Keeper feeds Dustin the Dog.
-Dustin the Dog eats.
+Dustin the Dog scarfs down its food.
 Zane the Zoo Keeper feeds Ellen the Elephant.
 Ellen the Elephant eats.
 Zane the Zoo Keeper feeds Eliana the Elephant.
@@ -736,9 +737,9 @@ Ralphie the Rhino eats.
 Zane the Zoo Keeper feeds Rahil the Rhino.
 Rahil the Rhino eats.
 Zane the Zoo Keeper feeds Walter the Wolf.
-Walter the Wolf eats.
+Walter the Wolf scarfs down its food.
 Zane the Zoo Keeper feeds Wendy the Wolf.
-Wendy the Wolf eats.
+Wendy the Wolf scarfs down its food.
 Zane the Zoo Keeper feeds Benjamin the Buffalo.
 Benjamin the Buffalo eats.
 Zane the Zoo Keeper feeds Brian the Buffalo.
@@ -753,13 +754,13 @@ Charlie the Cat roams.
 Zane the Zoo Keeper exercises Chloe the Cat.
 Chloe the Cat roams.
 Zane the Zoo Keeper exercises Daniel the Dog.
-Daniel the Dog roams.
+Daniel the Dog digs.
 Zane the Zoo Keeper exercises Dustin the Dog.
 Dustin the Dog roams.
 Zane the Zoo Keeper exercises Ellen the Elephant.
 Ellen the Elephant roams.
 Zane the Zoo Keeper exercises Eliana the Elephant.
-Eliana the Elephant charges.
+Eliana the Elephant roams.
 Zane the Zoo Keeper exercises Hank the Hippo.
 Hank the Hippo roams.
 Zane the Zoo Keeper exercises Heather the Hippo.
@@ -785,12 +786,12 @@ Benjamin the Buffalo roams.
 Zane the Zoo Keeper exercises Brian the Buffalo.
 Brian the Buffalo roams.
 Zane the Zoo Keeper exercises Yasmeen the Yak.
-Yasmeen the Yak roams.
+Yasmeen the Yak headbutts.
 Zane the Zoo Keeper exercises Yolanda the Yak.
-Yolanda the Yak roams.
+Yolanda the Yak headbutts.
 Zane the Zoo Keeper puts the animals they are responsible for to sleep.
 Zane the Zoo Keeper puts Charlie the Cat to sleep.
-Charlie the Cat sleeps.
+Charlie the Cat purrrrs.
 Zane the Zoo Keeper puts Chloe the Cat to sleep.
 Chloe the Cat sleeps.
 Zane the Zoo Keeper puts Daniel the Dog to sleep.
@@ -806,13 +807,13 @@ Hank the Hippo sleeps.
 Zane the Zoo Keeper puts Heather the Hippo to sleep.
 Heather the Hippo sleeps.
 Zane the Zoo Keeper puts Lilly the Lion to sleep.
-Lilly the Lion sleeps.
+Lilly the Lion roams.
 Zane the Zoo Keeper puts Larry the Lion to sleep.
 Larry the Lion roars.
 Zane the Zoo Keeper puts Tony the Tiger to sleep.
 Tony the Tiger sleeps.
 Zane the Zoo Keeper puts Tiffany the Tiger to sleep.
-Tiffany the Tiger stalks.
+Tiffany the Tiger sleeps.
 Zane the Zoo Keeper puts Ralphie the Rhino to sleep.
 Ralphie the Rhino sleeps.
 Zane the Zoo Keeper puts Rahil the Rhino to sleep.
@@ -920,9 +921,9 @@ Charlie the Cat eats.
 Zane the Zoo Keeper feeds Chloe the Cat.
 Chloe the Cat eats.
 Zane the Zoo Keeper feeds Daniel the Dog.
-Daniel the Dog eats.
+Daniel the Dog scarfs down its food.
 Zane the Zoo Keeper feeds Dustin the Dog.
-Dustin the Dog eats.
+Dustin the Dog scarfs down its food.
 Zane the Zoo Keeper feeds Ellen the Elephant.
 Ellen the Elephant eats.
 Zane the Zoo Keeper feeds Eliana the Elephant.
@@ -944,9 +945,9 @@ Ralphie the Rhino eats.
 Zane the Zoo Keeper feeds Rahil the Rhino.
 Rahil the Rhino eats.
 Zane the Zoo Keeper feeds Walter the Wolf.
-Walter the Wolf eats.
+Walter the Wolf scarfs down its food.
 Zane the Zoo Keeper feeds Wendy the Wolf.
-Wendy the Wolf eats.
+Wendy the Wolf scarfs down its food.
 Zane the Zoo Keeper feeds Benjamin the Buffalo.
 Benjamin the Buffalo eats.
 Zane the Zoo Keeper feeds Brian the Buffalo.
@@ -963,9 +964,9 @@ Chloe the Cat roams.
 Zane the Zoo Keeper exercises Daniel the Dog.
 Daniel the Dog roams.
 Zane the Zoo Keeper exercises Dustin the Dog.
-Dustin the Dog digs.
+Dustin the Dog roams.
 Zane the Zoo Keeper exercises Ellen the Elephant.
-Ellen the Elephant charges.
+Ellen the Elephant roams.
 Zane the Zoo Keeper exercises Eliana the Elephant.
 Eliana the Elephant roams.
 Zane the Zoo Keeper exercises Hank the Hippo.
@@ -983,24 +984,24 @@ Tiffany the Tiger stalks.
 Zane the Zoo Keeper exercises Ralphie the Rhino.
 Ralphie the Rhino roams.
 Zane the Zoo Keeper exercises Rahil the Rhino.
-Rahil the Rhino roams.
+Rahil the Rhino charges.
 Zane the Zoo Keeper exercises Walter the Wolf.
 Walter the Wolf roams.
 Zane the Zoo Keeper exercises Wendy the Wolf.
 Wendy the Wolf roams.
 Zane the Zoo Keeper exercises Benjamin the Buffalo.
-Benjamin the Buffalo roams.
+Benjamin the Buffalo headbutts.
 Zane the Zoo Keeper exercises Brian the Buffalo.
-Brian the Buffalo roams.
+Brian the Buffalo headbutts.
 Zane the Zoo Keeper exercises Yasmeen the Yak.
-Yasmeen the Yak roams.
+Yasmeen the Yak headbutts.
 Zane the Zoo Keeper exercises Yolanda the Yak.
 Yolanda the Yak roams.
 Zane the Zoo Keeper puts the animals they are responsible for to sleep.
 Zane the Zoo Keeper puts Charlie the Cat to sleep.
 Charlie the Cat purrrrs.
 Zane the Zoo Keeper puts Chloe the Cat to sleep.
-Chloe the Cat roams.
+Chloe the Cat purrrrs.
 Zane the Zoo Keeper puts Daniel the Dog to sleep.
 Daniel the Dog sleeps.
 Zane the Zoo Keeper puts Dustin the Dog to sleep.
@@ -1014,13 +1015,13 @@ Hank the Hippo sleeps.
 Zane the Zoo Keeper puts Heather the Hippo to sleep.
 Heather the Hippo sleeps.
 Zane the Zoo Keeper puts Lilly the Lion to sleep.
-Lilly the Lion roams.
+Lilly the Lion roars.
 Zane the Zoo Keeper puts Larry the Lion to sleep.
-Larry the Lion roams.
+Larry the Lion sleeps.
 Zane the Zoo Keeper puts Tony the Tiger to sleep.
 Tony the Tiger sleeps.
 Zane the Zoo Keeper puts Tiffany the Tiger to sleep.
-Tiffany the Tiger stalks.
+Tiffany the Tiger sleeps.
 Zane the Zoo Keeper puts Ralphie the Rhino to sleep.
 Ralphie the Rhino sleeps.
 Zane the Zoo Keeper puts Rahil the Rhino to sleep.
@@ -1128,9 +1129,9 @@ Charlie the Cat eats.
 Zane the Zoo Keeper feeds Chloe the Cat.
 Chloe the Cat eats.
 Zane the Zoo Keeper feeds Daniel the Dog.
-Daniel the Dog eats.
+Daniel the Dog scarfs down its food.
 Zane the Zoo Keeper feeds Dustin the Dog.
-Dustin the Dog eats.
+Dustin the Dog scarfs down its food.
 Zane the Zoo Keeper feeds Ellen the Elephant.
 Ellen the Elephant eats.
 Zane the Zoo Keeper feeds Eliana the Elephant.
@@ -1152,9 +1153,9 @@ Ralphie the Rhino eats.
 Zane the Zoo Keeper feeds Rahil the Rhino.
 Rahil the Rhino eats.
 Zane the Zoo Keeper feeds Walter the Wolf.
-Walter the Wolf eats.
+Walter the Wolf scarfs down its food.
 Zane the Zoo Keeper feeds Wendy the Wolf.
-Wendy the Wolf eats.
+Wendy the Wolf scarfs down its food.
 Zane the Zoo Keeper feeds Benjamin the Buffalo.
 Benjamin the Buffalo eats.
 Zane the Zoo Keeper feeds Brian the Buffalo.
@@ -1173,13 +1174,13 @@ Daniel the Dog roams.
 Zane the Zoo Keeper exercises Dustin the Dog.
 Dustin the Dog roams.
 Zane the Zoo Keeper exercises Ellen the Elephant.
-Ellen the Elephant charges.
+Ellen the Elephant roams.
 Zane the Zoo Keeper exercises Eliana the Elephant.
 Eliana the Elephant charges.
 Zane the Zoo Keeper exercises Hank the Hippo.
 Hank the Hippo roams.
 Zane the Zoo Keeper exercises Heather the Hippo.
-Heather the Hippo charges.
+Heather the Hippo roams.
 Zane the Zoo Keeper exercises Lilly the Lion.
 Lilly the Lion roams.
 Zane the Zoo Keeper exercises Larry the Lion.
@@ -1191,7 +1192,7 @@ Tiffany the Tiger stalks.
 Zane the Zoo Keeper exercises Ralphie the Rhino.
 Ralphie the Rhino roams.
 Zane the Zoo Keeper exercises Rahil the Rhino.
-Rahil the Rhino roams.
+Rahil the Rhino charges.
 Zane the Zoo Keeper exercises Walter the Wolf.
 Walter the Wolf roams.
 Zane the Zoo Keeper exercises Wendy the Wolf.
@@ -1199,16 +1200,16 @@ Wendy the Wolf roams.
 Zane the Zoo Keeper exercises Benjamin the Buffalo.
 Benjamin the Buffalo roams.
 Zane the Zoo Keeper exercises Brian the Buffalo.
-Brian the Buffalo roams.
+Brian the Buffalo headbutts.
 Zane the Zoo Keeper exercises Yasmeen the Yak.
 Yasmeen the Yak roams.
 Zane the Zoo Keeper exercises Yolanda the Yak.
-Yolanda the Yak roams.
+Yolanda the Yak headbutts.
 Zane the Zoo Keeper puts the animals they are responsible for to sleep.
 Zane the Zoo Keeper puts Charlie the Cat to sleep.
 Charlie the Cat purrrrs.
 Zane the Zoo Keeper puts Chloe the Cat to sleep.
-Chloe the Cat sleeps.
+Chloe the Cat roams.
 Zane the Zoo Keeper puts Daniel the Dog to sleep.
 Daniel the Dog sleeps.
 Zane the Zoo Keeper puts Dustin the Dog to sleep.
@@ -1222,13 +1223,13 @@ Hank the Hippo sleeps.
 Zane the Zoo Keeper puts Heather the Hippo to sleep.
 Heather the Hippo sleeps.
 Zane the Zoo Keeper puts Lilly the Lion to sleep.
-Lilly the Lion sleeps.
+Lilly the Lion roams.
 Zane the Zoo Keeper puts Larry the Lion to sleep.
-Larry the Lion roams.
+Larry the Lion sleeps.
 Zane the Zoo Keeper puts Tony the Tiger to sleep.
-Tony the Tiger sleeps.
+Tony the Tiger chuffs.
 Zane the Zoo Keeper puts Tiffany the Tiger to sleep.
-Tiffany the Tiger sleeps.
+Tiffany the Tiger chuffs.
 Zane the Zoo Keeper puts Ralphie the Rhino to sleep.
 Ralphie the Rhino sleeps.
 Zane the Zoo Keeper puts Rahil the Rhino to sleep.
@@ -1336,9 +1337,9 @@ Charlie the Cat eats.
 Zane the Zoo Keeper feeds Chloe the Cat.
 Chloe the Cat eats.
 Zane the Zoo Keeper feeds Daniel the Dog.
-Daniel the Dog eats.
+Daniel the Dog scarfs down its food.
 Zane the Zoo Keeper feeds Dustin the Dog.
-Dustin the Dog eats.
+Dustin the Dog scarfs down its food.
 Zane the Zoo Keeper feeds Ellen the Elephant.
 Ellen the Elephant eats.
 Zane the Zoo Keeper feeds Eliana the Elephant.
@@ -1360,9 +1361,9 @@ Ralphie the Rhino eats.
 Zane the Zoo Keeper feeds Rahil the Rhino.
 Rahil the Rhino eats.
 Zane the Zoo Keeper feeds Walter the Wolf.
-Walter the Wolf eats.
+Walter the Wolf scarfs down its food.
 Zane the Zoo Keeper feeds Wendy the Wolf.
-Wendy the Wolf eats.
+Wendy the Wolf scarfs down its food.
 Zane the Zoo Keeper feeds Benjamin the Buffalo.
 Benjamin the Buffalo eats.
 Zane the Zoo Keeper feeds Brian the Buffalo.
@@ -1379,15 +1380,15 @@ Chloe the Cat roams.
 Zane the Zoo Keeper exercises Daniel the Dog.
 Daniel the Dog roams.
 Zane the Zoo Keeper exercises Dustin the Dog.
-Dustin the Dog digs.
+Dustin the Dog roams.
 Zane the Zoo Keeper exercises Ellen the Elephant.
 Ellen the Elephant charges.
 Zane the Zoo Keeper exercises Eliana the Elephant.
-Eliana the Elephant roams.
+Eliana the Elephant charges.
 Zane the Zoo Keeper exercises Hank the Hippo.
-Hank the Hippo charges.
+Hank the Hippo roams.
 Zane the Zoo Keeper exercises Heather the Hippo.
-Heather the Hippo charges.
+Heather the Hippo roams.
 Zane the Zoo Keeper exercises Lilly the Lion.
 Lilly the Lion roams.
 Zane the Zoo Keeper exercises Larry the Lion.
@@ -1399,7 +1400,7 @@ Tiffany the Tiger stalks.
 Zane the Zoo Keeper exercises Ralphie the Rhino.
 Ralphie the Rhino roams.
 Zane the Zoo Keeper exercises Rahil the Rhino.
-Rahil the Rhino charges.
+Rahil the Rhino roams.
 Zane the Zoo Keeper exercises Walter the Wolf.
 Walter the Wolf roams.
 Zane the Zoo Keeper exercises Wendy the Wolf.
@@ -1409,14 +1410,14 @@ Benjamin the Buffalo roams.
 Zane the Zoo Keeper exercises Brian the Buffalo.
 Brian the Buffalo roams.
 Zane the Zoo Keeper exercises Yasmeen the Yak.
-Yasmeen the Yak roams.
+Yasmeen the Yak headbutts.
 Zane the Zoo Keeper exercises Yolanda the Yak.
 Yolanda the Yak roams.
 Zane the Zoo Keeper puts the animals they are responsible for to sleep.
 Zane the Zoo Keeper puts Charlie the Cat to sleep.
-Charlie the Cat purrrrs.
+Charlie the Cat sleeps.
 Zane the Zoo Keeper puts Chloe the Cat to sleep.
-Chloe the Cat purrrrs.
+Chloe the Cat sleeps.
 Zane the Zoo Keeper puts Daniel the Dog to sleep.
 Daniel the Dog sleeps.
 Zane the Zoo Keeper puts Dustin the Dog to sleep.
@@ -1430,13 +1431,13 @@ Hank the Hippo sleeps.
 Zane the Zoo Keeper puts Heather the Hippo to sleep.
 Heather the Hippo sleeps.
 Zane the Zoo Keeper puts Lilly the Lion to sleep.
-Lilly the Lion roams.
+Lilly the Lion roars.
 Zane the Zoo Keeper puts Larry the Lion to sleep.
-Larry the Lion sleeps.
+Larry the Lion roams.
 Zane the Zoo Keeper puts Tony the Tiger to sleep.
-Tony the Tiger sleeps.
+Tony the Tiger chuffs.
 Zane the Zoo Keeper puts Tiffany the Tiger to sleep.
-Tiffany the Tiger chuffs.
+Tiffany the Tiger stalks.
 Zane the Zoo Keeper puts Ralphie the Rhino to sleep.
 Ralphie the Rhino sleeps.
 Zane the Zoo Keeper puts Rahil the Rhino to sleep.

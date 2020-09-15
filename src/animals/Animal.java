@@ -1,9 +1,8 @@
 package animals;
 
 import randomChance.randomChance;
-import employees.*;
 
-//OO term abstract class
+//OO term abstract class since not all of the public methods have a concrete implementation.
 public abstract class Animal {
 
    // Default constructor
