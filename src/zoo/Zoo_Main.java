@@ -32,6 +32,8 @@ public class Zoo_Main {
          // https://www.tutorialspoint.com/javareflect/javareflect_constructor_newinstance.htm
          try {
             Constructor c = forName(animalTypes[i]).getDeclaredConstructor(nameGenerator.class);
+            // This instantiates the collection of animals. The name generator provides each animal
+            // instance with a unique name that is the objects identity.
             zooAnimals.add((Animal) c.newInstance(ng));
             zooAnimals.add((Animal) c.newInstance(ng));
          } catch (ClassNotFoundException | NoSuchMethodException |
@@ -41,8 +43,12 @@ public class Zoo_Main {
          }
       }
 
-      //TODO: Instantiate the ZooKeeper
-      //ZooKeeper joe = new ZooKeeper();
+      // Instantiate the zoo keeper object.
+      // The zoo keeper will get a unique name which can be used as the objects identity
+      // provided to it by the name generator
+      // and it also takes in a collection of animal objects that the zookeeper is
+      // responsible for taking care of.
+      ZooKeeper zk = new ZooKeeper(ng, zooAnimals);
 
       // Take input of the # of days to run
       // Buffered Reader code taken from:
@@ -69,7 +75,16 @@ public class Zoo_Main {
          System.exit(1);
       }
       for(int i=0; i < numDays; i++){
-         //TODO: implement usage of zookeeper.
+         int day = i + 1;
+         String output = "~~~~~~~~~~~~~~~~~ Day " + day + " ~~~~~~~~~~~~~~~~~";
+         System.out.println(output);
+         zk.arrivesAtZoo(day);
+         zk.wakeUpAnimals();
+         zk.playWithAnimals();
+         zk.feedAnimals();
+         zk.chaseAnimals();
+         zk.putAnimalsToSleep();
+         zk.leaveZoo(day);
       }
    }
 }

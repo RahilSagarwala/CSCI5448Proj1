@@ -16,27 +16,30 @@ public class Cat extends Feline {
    public Cat(nameGenerator ng) {
       super();
 
-      // Get unique name
+      // Get unique name is an example of object identity.
       myName = ng.getUniqueName(myType);
    }
 
+   // This overridden method is an example of polymorphism
    @Override
    public void makeNoise() {
       String output = this.getName() + " the " + this.getType() + " purrrrs.";
       System.out.println(output);
    }
 
+   // This overridden method is an example of polymorphism
    @Override
    public String getName() {
       return myName;
    }
 
+   // This overridden method is an example of polymorphism
    @Override
    public String getType() {
       return myType;
    }
 
-   // Member variables
+   // Member variables are an example of encapsulation.
    private String myName;
    private static String myType = "Cat";
 }

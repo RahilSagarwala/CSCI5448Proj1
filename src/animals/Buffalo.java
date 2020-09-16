@@ -16,23 +16,26 @@ public class Buffalo extends Bovinae {
       myName = ng.getUniqueName(myType);
    }
 
+   // This overridden method is an example of polymorphism
    @Override
    public void makeNoise() {
       String output = this.getName() + " the " + this.getType() + " buff.";
       System.out.println(output);
    }
 
+   // This overridden method is an example of polymorphism
    @Override
    public String getName() {
       return myName;
    }
 
+   // This overridden method is an example of polymorphism
    @Override
    public String getType() {
       return myType;
    }
 
-
+   // Private member variables are an example of encapsulation.
    private String myName;
    private static String myType = "Buffalo";
 }

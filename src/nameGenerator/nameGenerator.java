@@ -23,7 +23,8 @@ public class nameGenerator {
                                entry('r', new String[]{"Ralphie", "Rahil", "Ryan", "Roger", "Ruth", "Rachel"}),
                                entry('t', new String[]{"Tony", "Tiffany", "Tyler", "Tatiana"}),
                                entry('w', new String[]{"Walter", "Wendy", "Wesley", "Willow"}),
-                               entry('y', new String[]{"Yasmeen", "Yolanda", "Yuri", "Yosef"}));
+                               entry('y', new String[]{"Yasmeen", "Yolanda", "Yuri", "Yosef"}),
+                               entry('z', new String[]{"Zane", "Zeke", "Zoey", "Zelda"}));
 
       usedNames = new HashSet<String>();
    }
@@ -45,7 +46,8 @@ public class nameGenerator {
       return null;
    }
 
-   // Private member variables
+   // Private member variables are an example of encapsulation. These
+   // private members hide implementation details from the end user.
    private Map<Character, String[]> nameBank;
    private HashSet<String> usedNames;
 }
