@@ -11,9 +11,9 @@ public class ZooClock extends Clock {
 
    @Override
    public void tick() {
-      currentTime++;
       this.printTime();
       subject.notifyObservers();
+      currentTime++;
    }
 
    @Override
@@ -39,7 +39,9 @@ public class ZooClock extends Clock {
    @Override
    public void start() {
       currentTime = startTime;
-      this.printTime();
+      while(currentTime <= endTime){
+         this.tick();
+      }
    }
 
    @Override
@@ -48,7 +50,7 @@ public class ZooClock extends Clock {
    }
 
    private void printTime(){
-      String output = "Ding Dong Ding Dong - it is " + currentTime + " o'clock!";
+      String output = "Ding Dong Ding Dong - it is " + currentTime + "00 o'clock!";
       System.out.println(output);
    }
 
