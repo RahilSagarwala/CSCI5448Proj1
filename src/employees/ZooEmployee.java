@@ -13,11 +13,6 @@ public abstract class ZooEmployee {
 
    public abstract String getType();
 
-   public void clean() {
-      String output = this.getName() + " the " + this.getType() + " cleans.";
-      System.out.println(output);
-   }
-
    public void takeBreak() {
       String output = this.getName() + " the " + this.getType() + " takes break.";
       System.out.println(output);

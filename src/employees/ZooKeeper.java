@@ -4,6 +4,9 @@ import animals.*;
 import nameGenerator.nameGenerator;
 
 import java.util.List;
+import java.beans.PropertyChangeSupport;
+import java.beans.PropertyChangeListener;
+
 
 public class ZooKeeper extends ZooEmployee {
 
@@ -20,7 +23,7 @@ public class ZooKeeper extends ZooEmployee {
       responsibleAnimals = a;
    }
 
-   // This overridden method is an example of polymorphism
+   // This overridden method is an example of pogymorphism
    @Override
    public String getName() {
       return myName;
@@ -32,8 +35,6 @@ public class ZooKeeper extends ZooEmployee {
       return myType;
    }
 
-   // This overridden method is an example of polymorphism
-   @Override
    public void clean() {
       String output = this.getName() + " cleans the animal pens.";
       System.out.println(output);
@@ -156,10 +157,20 @@ public class ZooKeeper extends ZooEmployee {
       a.sleep();
    }
 
+   public void addPropertyChangeListener(PropertyChangeListener listener) {
+      support.addPropertyChangeListener(listener);
+   }
+
+   public void removePropertyChangeListener(PropertyChangeListener listener) {
+      support.removePropertyChangeListener(listener);
+   }
+
+
    // Private member variables
    // Private member variables are an example of encapsulation that hide implementation
    // details from the end user.
    private String myName;
    private static String myType = "Zoo Keeper";
    private List<Animal> responsibleAnimals;
+   private final PropertyChangeSupport support = new PropertyChangeSupport(this);
 }

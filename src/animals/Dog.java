@@ -1,6 +1,8 @@
 package animals;
 
+import behaviors.RoamAndDig;
 import nameGenerator.nameGenerator;
+
 
 //Dog and Wolf classes exhibit polymorphism as they are both subclasses of Canine
 public class Dog extends Canine {
@@ -9,6 +11,7 @@ public class Dog extends Canine {
       super();
       //TODO: Implement name generation
       myName = "Name";
+      roamBehavior = new RoamAndDig();
    }
 
    public Dog(nameGenerator ng) {

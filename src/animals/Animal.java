@@ -1,5 +1,7 @@
 package animals;
 
+import behaviors.RoamBehavior;
+import behaviors.Roam;
 import randomChance.randomChance;
 
 //OO term abstract class since not all of the public methods have a concrete implementation.
@@ -8,7 +10,6 @@ public abstract class Animal {
    // Default constructor
    public Animal() {
       super();
-
       rand = new randomChance();
    }
 
@@ -30,7 +31,7 @@ public abstract class Animal {
    }
 
    public void roam() {
-      String output = this.getName() + " the " + this.getType() + " roams.";
+      String output = roamBehavior.roam(this.getName(), this.getType());
       System.out.println(output);
    }
 
@@ -41,8 +42,8 @@ public abstract class Animal {
 
    //encapsulated variable and methods can only be accessed by subclasses of Animal
    protected randomChance rand;
+   protected void setRandomChance(randomChance r) { rand = r; }
 
-   protected void setRandomChance(randomChance r) {
-      rand = r;
-   }
+   protected RoamBehavior roamBehavior = new Roam();
+   protected void setRoamBehavior(RoamBehavior _roamBehavior) { roamBehavior = _roamBehavior; }
 }
