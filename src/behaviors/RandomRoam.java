@@ -6,6 +6,9 @@ import java.util.ArrayList;
 public class RandomRoam implements RoamBehavior {
 
    public String roam(Animal animal) {
+      if (probabilities == null) { return ""; }
+
+      // First need to check
       double min = 0.0;
       double max = 0.0;
       double randomNumber = rand.getProbability();
@@ -24,6 +27,10 @@ public class RandomRoam implements RoamBehavior {
    }
 
    public boolean setRoamBehaviors(ArrayList<RoamBehavior> roamBehaviors, double[] probabilities) {
+      if (roamBehaviors.size() != probabilities.length) {
+         return false;
+      }
+
       // Checks if the sum of the probabilities are equal to 1
       double sum = 0.0;
       for (double probability : probabilities) {
