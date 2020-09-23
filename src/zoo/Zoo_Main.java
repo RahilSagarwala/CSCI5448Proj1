@@ -48,6 +48,8 @@ public class Zoo_Main {
 
       // Instantiate the clock object
       clock.Clock clock = new ZooClock();
+      clock.setClockStart(8);
+      clock.setClockEnd(20);
 
       // Instantiate the zoo keeper object.
       // The zoo keeper will get a unique name which can be used as the objects identity
@@ -84,13 +86,7 @@ public class Zoo_Main {
          int day = i + 1;
          String output = "~~~~~~~~~~~~~~~~~ Day " + day + " ~~~~~~~~~~~~~~~~~";
          System.out.println(output);
-         zk.arrivesAtZoo(day);
-         zk.wakeUpAnimals();
-         zk.playWithAnimals();
-         zk.feedAnimals();
-         zk.chaseAnimals();
-         zk.putAnimalsToSleep();
-         zk.leaveZoo(day);
+         clock.start();
       }
    }
 }

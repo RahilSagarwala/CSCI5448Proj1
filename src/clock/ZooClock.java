@@ -33,7 +33,7 @@ public class ZooClock extends Clock {
 
    @Override
    public int getCurrentTime() {
-      return 0;
+      return currentTime;
    }
 
    @Override

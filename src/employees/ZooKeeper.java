@@ -34,7 +34,7 @@ public class ZooKeeper extends ZooEmployee implements iObserver {
    @Override
    public void update(iSubject s) {
       if (s instanceof ClockSubject){
-
+         performTasks();
       }
    }
 
@@ -177,6 +177,21 @@ public class ZooKeeper extends ZooEmployee implements iObserver {
    // Protected method to handle performing zoo keeper tasks based on the time of day
    protected void performTasks() {
       int currTime = clock.getCurrentTime();
+      if (currTime == 8) {
+         wakeUpAnimals();
+      }
+      else if (currTime == 9) {
+         playWithAnimals();
+      }
+      else if (currTime == 11) {
+         feedAnimals();
+      }
+      else if (currTime == 15) {
+         chaseAnimals();
+      }
+      else if (currTime == 19) {
+         putAnimalsToSleep();
+      }
    }
 
    // Protected method to set the clock object for testing
