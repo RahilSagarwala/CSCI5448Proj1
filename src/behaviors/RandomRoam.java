@@ -1,6 +1,5 @@
 package behaviors;
 import animals.Animal;
-import randomChance.randomChance;
 import randomChance.randomProbability;
 import java.util.ArrayList;
 

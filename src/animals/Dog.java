@@ -3,8 +3,8 @@ package animals;
 import java.util.ArrayList;
 
 import behaviors.Dig;
-import behaviors.RandomRoam;
 import behaviors.Roam;
+import behaviors.RandomRoam;
 import behaviors.RoamBehavior;
 import nameGenerator.nameGenerator;
 
@@ -18,9 +18,12 @@ public class Dog extends Canine {
       myName = "Name";
       roamBehavior = new RandomRoam();
 
+      /*When a Dog is given the exercise command by the Zookeeper,
+       *there is a 25% chance the dog will dig instead of roaming.
+       */
       ArrayList<RoamBehavior> roamBehaviors = new ArrayList<RoamBehavior>();
-      roamBehaviors.add(new Dig());
       roamBehaviors.add(new Roam());
+      roamBehaviors.add(new Dig());
       double[] probabilities = new double[] {0.75, 0.25};
       boolean success = roamBehavior.setRoamBehaviors(roamBehaviors, probabilities);
    }
@@ -36,27 +39,6 @@ public class Dog extends Canine {
    @Override
    public void makeNoise() {
       String output = this.getName() + " the " + this.getType() + " woof.";
-      System.out.println(output);
-   }
-
-   /*When a Dog is given the exercise command by the Zookeeper,
-    *there is a 25% chance the dog will dig instead of roaming.
-    */
-   // This overridden method is an example of polymorphism
-   @Override
-   public void roam() {
-      int r = rand.getChance(4);
-
-      if (r <= 0) {
-         this.dig();
-      } else {
-         String output = this.getName() + " the " + this.getType() + " roams.";
-         System.out.println(output);
-      }
-   }
-
-   public void dig() {
-      String output = this.getName() + " the " + this.getType() + " digs.";
       System.out.println(output);
    }
 
