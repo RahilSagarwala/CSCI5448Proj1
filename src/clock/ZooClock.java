@@ -4,7 +4,7 @@ import observer.ClockSubject;
 import observer.iSubject;
 
 public class ZooClock extends Clock {
-   ZooClock(){
+   public ZooClock(){
       super();
       subject = new ClockSubject();
    }

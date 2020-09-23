@@ -1,23 +1,41 @@
 package employees;
 
 import animals.*;
+import clock.Clock;
+import observer.*;
 import nameGenerator.nameGenerator;
 
 import java.util.List;
 
-public class ZooKeeper extends ZooEmployee {
+public class ZooKeeper extends ZooEmployee implements iObserver {
 
    public ZooKeeper() {
       super();
       myName = "Name";
    }
 
-   public ZooKeeper(nameGenerator ng, List<Animal> a){
+   public ZooKeeper(nameGenerator ng, List<Animal> a, Clock c){
       // Get unique name
       myName = ng.getUniqueName(this.getType());
       // Zoo keeper has a collection of animals they are responsible for
       // caring for.
       responsibleAnimals = a;
+
+      // Store the clock subject to register with
+      clockSubject = c.getSubject();
+      clockSubject.addObserver(this);
+
+      // Store the clock object
+      clock = c;
+   }
+
+   // Implement the update method of the observer interface allowing
+   // the ZooKeeper to be an instance of iObserver interface.
+   @Override
+   public void update(iSubject s) {
+      if (s instanceof ClockSubject){
+
+      }
    }
 
    // This overridden method is an example of polymorphism
@@ -156,10 +174,22 @@ public class ZooKeeper extends ZooEmployee {
       a.sleep();
    }
 
+   // Protected method to handle performing zoo keeper tasks based on the time of day
+   protected void performTasks() {
+      int currTime = clock.getCurrentTime();
+   }
+
+   // Protected method to set the clock object for testing
+   protected void setClock(Clock c){
+      clock = c;
+   }
+
    // Private member variables
    // Private member variables are an example of encapsulation that hide implementation
    // details from the end user.
    private String myName;
    private static String myType = "Zoo Keeper";
    private List<Animal> responsibleAnimals;
+   private iSubject clockSubject;
+   private Clock clock;
 }

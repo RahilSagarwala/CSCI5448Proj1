@@ -1,8 +1,11 @@
 package zoo;
 
 import animals.*;
+import clock.ZooClock;
 import employees.*;
 import nameGenerator.nameGenerator;
+import observer.ClockSubject;
+import observer.iSubject;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -43,12 +46,15 @@ public class Zoo_Main {
          }
       }
 
+      // Instantiate the clock object
+      clock.Clock clock = new ZooClock();
+
       // Instantiate the zoo keeper object.
       // The zoo keeper will get a unique name which can be used as the objects identity
       // provided to it by the name generator
       // and it also takes in a collection of animal objects that the zookeeper is
       // responsible for taking care of.
-      ZooKeeper zk = new ZooKeeper(ng, zooAnimals);
+      ZooKeeper zk = new ZooKeeper(ng, zooAnimals, clock);
 
       // Take input of the # of days to run
       // Buffered Reader code taken from:
