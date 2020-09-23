@@ -1,6 +1,11 @@
 package animals;
 
-import behaviors.RoamAndDig;
+import java.util.ArrayList;
+
+import behaviors.Dig;
+import behaviors.RandomRoam;
+import behaviors.Roam;
+import behaviors.RoamBehavior;
 import nameGenerator.nameGenerator;
 
 
@@ -11,7 +16,13 @@ public class Dog extends Canine {
       super();
       //TODO: Implement name generation
       myName = "Name";
-      roamBehavior = new RoamAndDig();
+      roamBehavior = new RandomRoam();
+
+      ArrayList<RoamBehavior> roamBehaviors = new ArrayList<RoamBehavior>();
+      roamBehaviors.add(new Dig());
+      roamBehaviors.add(new Roam());
+      double[] probabilities = new double[] {0.75, 0.25};
+      boolean success = roamBehavior.setRoamBehaviors(roamBehaviors, probabilities);
    }
 
    public Dog(nameGenerator ng) {

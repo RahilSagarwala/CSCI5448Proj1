@@ -1,7 +1,7 @@
 package behaviors;
 
-import java.util.ArrayList;
+import animals.Animal;
 
 public interface  RoamBehavior {
-   public String roam(String name, String type);
+   public String roam(Animal animal);
 }

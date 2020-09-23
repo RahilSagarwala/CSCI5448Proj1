@@ -1,9 +1,10 @@
 package behaviors;
+import animals.Animal;
 
 public class Roam implements RoamBehavior {
 
-   public String roam(String name, String type) {
-      String output = name + " the " + type + " roams.";
+   public String roam(Animal animal) {
+      String output = animal.getName() + " the " + animal.getType() + " roams.";
       return output;
    }
 

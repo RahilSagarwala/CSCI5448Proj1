@@ -11,6 +11,7 @@ public abstract class Animal {
    public Animal() {
       super();
       rand = new randomChance();
+      roamBehavior = new Roam();
    }
 
    public void sleep() {
@@ -31,7 +32,7 @@ public abstract class Animal {
    }
 
    public void roam() {
-      String output = roamBehavior.roam(this.getName(), this.getType());
+      String output = roamBehavior.roam(this);
       System.out.println(output);
    }
 
@@ -44,6 +45,6 @@ public abstract class Animal {
    protected randomChance rand;
    protected void setRandomChance(randomChance r) { rand = r; }
 
-   protected RoamBehavior roamBehavior = new Roam();
-   protected void setRoamBehavior(RoamBehavior _roamBehavior) { roamBehavior = _roamBehavior; }
+   protected RoamBehavior roamBehavior;
+   protected void setRoamBehavior(RoamBehavior roamBehavior) { this.roamBehavior = roamBehavior; }
 }

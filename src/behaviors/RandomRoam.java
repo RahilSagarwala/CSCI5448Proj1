@@ -1,20 +1,21 @@
 package behaviors;
-
+import animals.Animal;
+import randomChance.randomChance;
+import randomChance.randomProbability;
 import java.util.ArrayList;
-import java.util.Random;
 
 public class RandomRoam implements RoamBehavior {
 
-   public String roam(String name, String type) {
+   public String roam(Animal animal) {
       double min = 0.0;
       double max = 0.0;
-      double randomNumber = rand.nextDouble();
+      double randomNumber = rand.getProbability();
 
       String output = "";
       for (int i=0; i<probabilities.length; i++){
          max = min + probabilities[i];
          if ((min < randomNumber) && (randomNumber < max)) {
-            output = roamBehaviors.get(i).roam(name, type);
+            output = roamBehaviors.get(i).roam(animal);
          }
 
          min = max;
@@ -23,23 +24,25 @@ public class RandomRoam implements RoamBehavior {
       return output;
    }
 
-   public boolean setRoamBehaviors(ArrayList<RoamBehavior> _roamBehaviors, double[] _probabilities) {
+   public boolean setRoamBehaviors(ArrayList<RoamBehavior> roamBehaviors, double[] probabilities) {
       // Checks if the sum of the probabilities are equal to 1
       double sum = 0.0;
-      for (double probability : _probabilities) {
+      for (double probability : probabilities) {
          sum += probability;
       }
 
       if (sum != 1.0) {
          return false;
       }
-      roamBehaviors = _roamBehaviors;
-      probabilities = _probabilities;
+      this.roamBehaviors = roamBehaviors;
+      this.probabilities = probabilities;
 
       return true;
    };
 
+   protected randomProbability rand = new randomProbability();
+   protected void setRandomProbability(randomProbability r) { rand = r; }
+
    protected ArrayList<RoamBehavior> roamBehaviors;
    private double[] probabilities;
-   private final Random rand = new Random();
 }
