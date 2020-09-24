@@ -1,20 +1,20 @@
 package employees;
 import nameGenerator.nameGenerator;
+
+import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
 
-public class ZooAnnouncer extends ZooEmployee {
+public class ZooAnnouncer extends ZooEmployee implements PropertyChangeListener {
 
    public ZooAnnouncer() {
       super();
       myName = "Name";
-      zooKeeperListener = new ZooKeeperListener(this);
    }
 
    public ZooAnnouncer(nameGenerator ng){
       // Get unique name
       myName = ng.getUniqueName(this.getType());
-      zooKeeperListener = new ZooKeeperListener(this);
    }
 
    // This overridden method is an example of polymorphism
@@ -36,12 +36,14 @@ public class ZooAnnouncer extends ZooEmployee {
       System.out.println(output);
    }
 
-   public void setZooKeeperListener(PropertyChangeListener zooKeeperListener) {
-      this.zooKeeperListener = zooKeeperListener;
-   }
-
-   public PropertyChangeListener getListener() {
-      return this.zooKeeperListener;
+   // Listens to the ZooKeeper's property changes (messages)
+   public void propertyChange(PropertyChangeEvent e) {
+      // propertyName can be retrieved by e.getPropertyName();
+      // so that we can change the behavior according to the name
+      ZooEmployeeActivity activity = (ZooEmployeeActivity) e.getNewValue();
+      String first_sentence = "Hi, this is " + this.getName() + " the " + this.getType() + ". ";
+      String second_sentence = activity.getName() + " the " + activity.getType() + " is about to " + activity.getAction();
+      System.out.println(first_sentence + second_sentence);
    }
 
    // Private member variables
@@ -49,6 +51,4 @@ public class ZooAnnouncer extends ZooEmployee {
    // details from the end user.
    private String myName;
    private static String myType = "Zoo Announcer";
-   // Listener implements an Observer class to listen to Observable (ZooKeeper)
-   private PropertyChangeListener zooKeeperListener;
 }
