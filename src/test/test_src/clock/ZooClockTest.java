@@ -29,7 +29,7 @@ class ZooClockTest {
    }
 
    @Test
-   void test_ZooClock_Start_Two_Hours() {
+   void testZooClockStartTwoHours() {
       ZooClock clock = new ZooClock();
       clock.setClockStart(8);
       clock.setClockEnd(9);
