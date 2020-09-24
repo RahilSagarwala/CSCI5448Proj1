@@ -70,27 +70,14 @@ public class Zoo_Main {
          e.printStackTrace();
       }
 
-      // Loop for the number of days, having the zookeeper
-      //      Arrive at the zoo
-      //      Wake the animals
-      //      Roll Call the animals (make noise)
-      //      Feed the animals
-      //      Exercise the animals (roam)
-      //      Put animals to sleep
-      //      leave the zoo
+      // Have the clock run for the number of days.
+      // The necessary classes observe the clock and perform
+      // their tasks based on the time of day.
       if( numDays <= 0 ){
          System.out.println("Error: Must enter number > 0 for the number of days to run.");
          System.exit(1);
       }
       clock.setClockDays(numDays);
       clock.start();
-      /*
-      for(int i=0; i < numDays; i++){
-         int day = i + 1;
-         String output = "~~~~~~~~~~~~~~~~~ Day " + day + " ~~~~~~~~~~~~~~~~~";
-         System.out.println(output);
-         clock.start();
-      }
-      */
    }
 }
