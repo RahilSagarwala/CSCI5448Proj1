@@ -45,6 +45,10 @@ public abstract class Animal {
    protected randomChance rand;
    protected void setRandomChance(randomChance r) { rand = r; }
 
+   /* Strategy Pattern is used here
+    * Animal throws all the implementation to RoamBehavior interface.
+    * All animals roam as default.
+    */
    protected RoamBehavior roamBehavior;
    protected void setRoamBehavior(RoamBehavior roamBehavior) { this.roamBehavior = roamBehavior; }
 }
