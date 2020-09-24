@@ -80,6 +80,7 @@ public class Zoo_Main {
          int day = i + 1;
          String output = "~~~~~~~~~~~~~~~~~ Day " + day + " ~~~~~~~~~~~~~~~~~";
          System.out.println(output);
+         zooAnnouncer.arrivesAtZoo(day);
          zk.arrivesAtZoo(day);
          zk.wakeUpAnimals();
          zk.playWithAnimals();
@@ -87,6 +88,7 @@ public class Zoo_Main {
          zk.chaseAnimals();
          zk.putAnimalsToSleep();
          zk.leaveZoo(day);
+         zooAnnouncer.leaveZoo(day);
       }
    }
 }

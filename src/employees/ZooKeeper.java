@@ -159,15 +159,22 @@ public class ZooKeeper extends ZooEmployee {
       a.sleep();
    }
 
+   /*
+    * Observer Pattern.
+    * This function publishes changes (messages) to the registered listeners.
+    * It is called when ZooKeeper take an action.
+    */
    private void publishChanges(String output) {
       support.firePropertyChange("", currentProperty, output);
       currentProperty = output;
    }
 
+   // Register a listener
    public void addPropertyChangeListener(PropertyChangeListener listener) {
       support.addPropertyChangeListener(listener);
    }
 
+   // Remove a listener
    public void removePropertyChangeListener(PropertyChangeListener listener) {
       support.removePropertyChangeListener(listener);
    }
