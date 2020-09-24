@@ -7,6 +7,9 @@ public class ZooClock extends Clock {
    public ZooClock(){
       super();
       subject = new ClockSubject();
+      // Default to running for one day.
+      numDays = 1;
+      currentDay = 1;
    }
 
    @Override
@@ -27,6 +30,11 @@ public class ZooClock extends Clock {
    }
 
    @Override
+   public void setClockDays(int d) {
+      numDays = d;
+   }
+
+   @Override
    public void setSubject(iSubject s) {
       subject = s;
    }
@@ -37,10 +45,19 @@ public class ZooClock extends Clock {
    }
 
    @Override
+   public int getCurrentDay() {
+      return currentDay;
+   }
+
+   @Override
    public void start() {
-      currentTime = startTime;
-      while(currentTime <= endTime){
-         this.tick();
+      while(currentDay <= numDays) {
+         currentTime = startTime;
+         printDay();
+         while (currentTime <= endTime) {
+            this.tick();
+         }
+         currentDay++;
       }
    }
 
@@ -54,9 +71,16 @@ public class ZooClock extends Clock {
       System.out.println(output);
    }
 
-   //Private Methods
-   iSubject subject;
-   int currentTime;
-   int startTime;
-   int endTime;
+   private void printDay(){
+      String output = "~~~~~~~~~~~~~~~~~ Day " + currentDay + " ~~~~~~~~~~~~~~~~~";
+      System.out.println(output);
+   }
+
+   //Private Attributes
+   private iSubject subject;
+   private int currentTime;
+   private int startTime;
+   private int endTime;
+   private int numDays;
+   private int currentDay;
 }

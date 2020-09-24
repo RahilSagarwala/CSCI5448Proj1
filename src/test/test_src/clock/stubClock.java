@@ -19,6 +19,11 @@ public class stubClock extends Clock {
    }
 
    @Override
+   public void setClockDays(int d) {
+
+   }
+
+   @Override
    public void setSubject(iSubject s) {
 
    }
@@ -26,6 +31,11 @@ public class stubClock extends Clock {
    @Override
    public int getCurrentTime() {
       return currentTime;
+   }
+
+   @Override
+   public int getCurrentDay() {
+      return 0;
    }
 
    @Override

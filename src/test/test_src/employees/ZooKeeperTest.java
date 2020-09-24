@@ -77,4 +77,32 @@ class ZooKeeperTest {
       //Assert
       assertTrue(mz.sleepCalled);
    }
+
+   @Test
+   void performTasks_Arrives_At_0700() {
+      // Arrange
+      stubClock c = new stubClock();
+      c.setCurrTime(7);
+      mockZooKeeper mz = new mockZooKeeper(c);
+
+      //Act
+      mz.performTasks();
+
+      //Assert
+      assertTrue(mz.arriveCalled);
+   }
+
+   @Test
+   void performTasks_Leaves_At_2100() {
+      // Arrange
+      stubClock c = new stubClock();
+      c.setCurrTime(21);
+      mockZooKeeper mz = new mockZooKeeper(c);
+
+      //Act
+      mz.performTasks();
+
+      //Assert
+      assertTrue(mz.leaveCalled);
+   }
 }

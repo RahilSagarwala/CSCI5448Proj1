@@ -177,7 +177,11 @@ public class ZooKeeper extends ZooEmployee implements iObserver {
    // Protected method to handle performing zoo keeper tasks based on the time of day
    protected void performTasks() {
       int currTime = clock.getCurrentTime();
-      if (currTime == 8) {
+      int currDay = clock.getCurrentDay();
+      if (currTime == 7) {
+         arrivesAtZoo(currDay);
+      }
+      else if (currTime == 8) {
          wakeUpAnimals();
       }
       else if (currTime == 9) {
@@ -191,6 +195,9 @@ public class ZooKeeper extends ZooEmployee implements iObserver {
       }
       else if (currTime == 19) {
          putAnimalsToSleep();
+      }
+      else if (currTime == 21) {
+         leaveZoo(currDay);
       }
    }
 

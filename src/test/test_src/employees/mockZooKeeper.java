@@ -9,6 +9,8 @@ public class mockZooKeeper extends ZooKeeper {
       chaseCalled = false;
       feedCalled = false;
       sleepCalled = false;
+      arriveCalled = false;
+      leaveCalled = false;
    }
 
    public mockZooKeeper(Clock c){
@@ -18,6 +20,8 @@ public class mockZooKeeper extends ZooKeeper {
       chaseCalled = false;
       feedCalled = false;
       sleepCalled = false;
+      arriveCalled = false;
+      leaveCalled = false;
    }
 
    public boolean wakeCalled;
@@ -48,5 +52,17 @@ public class mockZooKeeper extends ZooKeeper {
    @Override
    public void putAnimalsToSleep() {
       sleepCalled = true;
+   }
+
+   public boolean arriveCalled;
+   @Override
+   public void arrivesAtZoo(int day) {
+      arriveCalled = true;
+   }
+
+   public boolean leaveCalled;
+   @Override
+   public void leaveZoo(int day) {
+      leaveCalled = true;
    }
 }

@@ -48,8 +48,8 @@ public class Zoo_Main {
 
       // Instantiate the clock object
       clock.Clock clock = new ZooClock();
-      clock.setClockStart(8);
-      clock.setClockEnd(20);
+      clock.setClockStart(7);
+      clock.setClockEnd(21);
 
       // Instantiate the zoo keeper object.
       // The zoo keeper will get a unique name which can be used as the objects identity
@@ -82,11 +82,15 @@ public class Zoo_Main {
          System.out.println("Error: Must enter number > 0 for the number of days to run.");
          System.exit(1);
       }
+      clock.setClockDays(numDays);
+      clock.start();
+      /*
       for(int i=0; i < numDays; i++){
          int day = i + 1;
          String output = "~~~~~~~~~~~~~~~~~ Day " + day + " ~~~~~~~~~~~~~~~~~";
          System.out.println(output);
          clock.start();
       }
+      */
    }
 }
