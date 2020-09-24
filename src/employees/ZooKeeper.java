@@ -2,9 +2,11 @@ package employees;
 
 import animals.*;
 import clock.Clock;
+import clock.ZooClock;
 import observer.*;
 import nameGenerator.nameGenerator;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ZooKeeper extends ZooEmployee implements iObserver {
@@ -12,6 +14,8 @@ public class ZooKeeper extends ZooEmployee implements iObserver {
    public ZooKeeper() {
       super();
       myName = "Name";
+      responsibleAnimals = new ArrayList<Animal>();
+      clock = new ZooClock();
    }
 
    public ZooKeeper(nameGenerator ng, List<Animal> a, Clock c){
@@ -21,12 +25,9 @@ public class ZooKeeper extends ZooEmployee implements iObserver {
       // caring for.
       responsibleAnimals = a;
 
-      // Store the clock subject to register with
-      clockSubject = c.getSubject();
-      clockSubject.addObserver(this);
-
-      // Store the clock object
+      // Store the clock to observe
       clock = c;
+      clock.addObserver(this);
    }
 
    // Implement the update method of the observer interface allowing
@@ -174,6 +175,16 @@ public class ZooKeeper extends ZooEmployee implements iObserver {
       a.sleep();
    }
 
+   // public method to set the clock object
+   public void setClock(Clock c){
+      clock = c;
+   }
+
+   // public method to set the animals the zookeeper is responsible for
+   public void setResponsibleAnimals(List<Animal> a){
+      responsibleAnimals = a;
+   }
+
    // Protected method to handle performing zoo keeper tasks based on the time of day
    protected void performTasks() {
       int currTime = clock.getCurrentTime();
@@ -201,17 +212,11 @@ public class ZooKeeper extends ZooEmployee implements iObserver {
       }
    }
 
-   // Protected method to set the clock object for testing
-   protected void setClock(Clock c){
-      clock = c;
-   }
-
    // Private member variables
    // Private member variables are an example of encapsulation that hide implementation
    // details from the end user.
    private String myName;
    private static String myType = "Zoo Keeper";
    private List<Animal> responsibleAnimals;
-   private iSubject clockSubject;
    private Clock clock;
 }

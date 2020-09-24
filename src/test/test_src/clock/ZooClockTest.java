@@ -33,8 +33,9 @@ class ZooClockTest {
       ZooClock clock = new ZooClock();
       clock.setClockStart(8);
       clock.setClockEnd(9);
-      clock.start();
-      String expected = "Ding Dong Ding Dong - it is 800 o'clock!" + nL +
+      clock.startClock();
+      String expected = "~~~~~~~~~~~~~~~~~ Day 1 ~~~~~~~~~~~~~~~~~" + nL +
+            "Ding Dong Ding Dong - it is 800 o'clock!" + nL +
             "Ding Dong Ding Dong - it is 900 o'clock!" + nL;
       assertEquals(expected, sOut.toString());
    }

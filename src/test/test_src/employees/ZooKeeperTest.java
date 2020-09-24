@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class ZooKeeperTest {
 
    @Test
-   void performTasks_Wakes_Animals_At_0800() {
+   void performTasksWakesAnimalsAt0800() {
       // Arrange
       stubClock c = new stubClock();
       c.setCurrTime(8);
@@ -23,7 +23,7 @@ class ZooKeeperTest {
    }
 
    @Test
-   void performTasks_Plays_With_Animals_At_0900() {
+   void performTasksPlaysWithAnimalsAt0900() {
       // Arrange
       stubClock c = new stubClock();
       c.setCurrTime(9);
@@ -37,7 +37,7 @@ class ZooKeeperTest {
    }
 
    @Test
-   void performTasks_Feeds_Animals_At_1100() {
+   void performTasksFeedsAnimalsAt1100() {
       // Arrange
       stubClock c = new stubClock();
       c.setCurrTime(11);
@@ -51,7 +51,7 @@ class ZooKeeperTest {
    }
 
    @Test
-   void performTasks_Chases_Animals_At_1500() {
+   void performTasksChasesAnimalsAt1500() {
       // Arrange
       stubClock c = new stubClock();
       c.setCurrTime(15);
@@ -65,7 +65,7 @@ class ZooKeeperTest {
    }
 
    @Test
-   void performTasks_Sleeps_Animals_At_1900() {
+   void performTasksSleepsAnimalsAt1900() {
       // Arrange
       stubClock c = new stubClock();
       c.setCurrTime(19);
@@ -79,7 +79,7 @@ class ZooKeeperTest {
    }
 
    @Test
-   void performTasks_Arrives_At_0700() {
+   void performTasksArrivesAt0700() {
       // Arrange
       stubClock c = new stubClock();
       c.setCurrTime(7);
@@ -93,7 +93,7 @@ class ZooKeeperTest {
    }
 
    @Test
-   void performTasks_Leaves_At_2100() {
+   void performTasksLeavesAt2100() {
       // Arrange
       stubClock c = new stubClock();
       c.setCurrTime(21);

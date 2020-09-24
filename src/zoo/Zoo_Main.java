@@ -78,6 +78,6 @@ public class Zoo_Main {
          System.exit(1);
       }
       clock.setClockDays(numDays);
-      clock.start();
+      clock.startClock();
    }
 }

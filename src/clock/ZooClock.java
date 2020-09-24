@@ -1,6 +1,7 @@
 package clock;
 
 import observer.ClockSubject;
+import observer.iObserver;
 import observer.iSubject;
 
 public class ZooClock extends Clock {
@@ -10,13 +11,8 @@ public class ZooClock extends Clock {
       // Default to running for one day.
       numDays = 1;
       currentDay = 1;
-   }
-
-   @Override
-   public void tick() {
-      this.printTime();
-      subject.notifyObservers();
-      currentTime++;
+      startTime = 0;
+      endTime = 24;
    }
 
    @Override
@@ -35,11 +31,6 @@ public class ZooClock extends Clock {
    }
 
    @Override
-   public void setSubject(iSubject s) {
-      subject = s;
-   }
-
-   @Override
    public int getCurrentTime() {
       return currentTime;
    }
@@ -50,7 +41,7 @@ public class ZooClock extends Clock {
    }
 
    @Override
-   public void start() {
+   public void startClock() {
       while(currentDay <= numDays) {
          currentTime = startTime;
          printDay();
@@ -61,9 +52,27 @@ public class ZooClock extends Clock {
       }
    }
 
+   // Methods to make the clock object observable
+   // The functionality is delegated to the clock subject object.
    @Override
-   public iSubject getSubject() {
-      return subject;
+   public void addObserver(iObserver o) {
+      subject.addObserver(o);
+   }
+
+   @Override
+   public void removeObserver(iObserver o) {
+      subject.removeObserver(o);
+   }
+
+   @Override
+   public void notifyObservers(iSubject s) {
+      subject.notifyObservers(this);
+   }
+
+   private void tick() {
+      this.printTime();
+      this.notifyObservers(null);
+      currentTime++;
    }
 
    private void printTime(){

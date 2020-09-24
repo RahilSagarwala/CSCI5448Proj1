@@ -1,12 +1,9 @@
 package clock;
 
+import observer.iObserver;
 import observer.iSubject;
 
 public class stubClock extends Clock {
-   @Override
-   public void tick() {
-
-   }
 
    @Override
    public void setClockStart(int s) {
@@ -23,10 +20,6 @@ public class stubClock extends Clock {
 
    }
 
-   @Override
-   public void setSubject(iSubject s) {
-
-   }
 
    @Override
    public int getCurrentTime() {
@@ -39,18 +32,30 @@ public class stubClock extends Clock {
    }
 
    @Override
-   public void start() {
+   public void startClock() {
 
    }
 
    @Override
-   public iSubject getSubject() {
-      return null;
+   public void addObserver(iObserver o) {
+
    }
+
+   @Override
+   public void removeObserver(iObserver o) {
+
+   }
+
+   @Override
+   public void notifyObservers(iSubject s) {
+
+   }
+
 
    public void setCurrTime(int t){
       currentTime = t;
    }
 
    private int currentTime;
+
 }

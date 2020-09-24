@@ -2,8 +2,7 @@ package clock;
 
 import observer.iSubject;
 
-public abstract class Clock {
-   public abstract void tick();
+public abstract class Clock implements iSubject {
 
    public abstract void setClockStart(int s);
 
@@ -11,13 +10,9 @@ public abstract class Clock {
 
    public abstract void setClockDays(int d);
 
-   public abstract void setSubject(iSubject s);
-
    public abstract int getCurrentTime();
 
    public abstract int getCurrentDay();
 
-   public abstract void start();
-
-   public abstract iSubject getSubject();
+   public abstract void startClock();
 }

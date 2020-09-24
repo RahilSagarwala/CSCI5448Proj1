@@ -26,9 +26,13 @@ public class ClockSubject implements iSubject {
    }
 
    @Override
-   public void notifyObservers() {
+   public void notifyObservers(iSubject s) {
+      iSubject sub = this;
+      if (s != null) {
+         sub = s;
+      }
       for ( iObserver o:observers ) {
-         o.update(this);
+         o.update(sub);
       }
    }
 
