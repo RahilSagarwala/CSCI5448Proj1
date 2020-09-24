@@ -1,7 +1,7 @@
 package animals;
 
-import behaviors.RoamBehavior;
 import behaviors.Roam;
+import behaviors.Behavior;
 import randomChance.randomChance;
 
 //OO term abstract class since not all of the public methods have a concrete implementation.
@@ -32,7 +32,7 @@ public abstract class Animal {
    }
 
    public void roam() {
-      String output = roamBehavior.roam(this);
+      String output = roamBehavior.takeAction(this);
       System.out.println(output);
    }
 
@@ -49,6 +49,6 @@ public abstract class Animal {
     * Animal throws all the implementation to RoamBehavior interface.
     * All animals roam as default.
     */
-   protected RoamBehavior roamBehavior;
-   protected void setRoamBehavior(RoamBehavior roamBehavior) { this.roamBehavior = roamBehavior; }
+   protected Behavior roamBehavior;
+   protected void setRoamBehavior(Behavior roamBehavior) { this.roamBehavior = roamBehavior; }
 }

@@ -3,9 +3,23 @@ import animals.Animal;
 import randomChance.randomProbability;
 import java.util.ArrayList;
 
-public class RandomRoam implements RoamBehavior {
+public class ProbablisticMultipleBehavior extends MultipleBehavior {
 
-   public String roam(Animal animal) {
+   public ProbablisticMultipleBehavior() {
+      super();
+      rand = new randomProbability();
+      behaviors = null;
+      probabilities = null;
+   }
+
+   // Default constructor
+   public ProbablisticMultipleBehavior(ArrayList<Behavior> behaviors, double[] probabilities) {
+      super();
+      rand = new randomProbability();
+      boolean success = this.setBehaviors(behaviors, probabilities);
+   }
+
+   public String takeAction(Animal animal) {
       if (probabilities == null) { return ""; }
 
       // First need to check
@@ -17,7 +31,7 @@ public class RandomRoam implements RoamBehavior {
       for (int i=0; i<probabilities.length; i++){
          max = min + probabilities[i];
          if ((min < randomNumber) && (randomNumber < max)) {
-            output = roamBehaviors.get(i).roam(animal);
+            output = behaviors.get(i).takeAction(animal);
          }
 
          min = max;
@@ -26,8 +40,8 @@ public class RandomRoam implements RoamBehavior {
       return output;
    }
 
-   public boolean setRoamBehaviors(ArrayList<RoamBehavior> roamBehaviors, double[] probabilities) {
-      if (roamBehaviors.size() != probabilities.length) {
+   public boolean setBehaviors(ArrayList<Behavior> behaviors, double[] probabilities) {
+      if (behaviors.size() != probabilities.length) {
          return false;
       }
 
@@ -40,15 +54,13 @@ public class RandomRoam implements RoamBehavior {
       if (sum != 1.0) {
          return false;
       }
-      this.roamBehaviors = roamBehaviors;
+      this.behaviors = behaviors;
       this.probabilities = probabilities;
 
       return true;
    };
 
-   protected randomProbability rand = new randomProbability();
-   protected void setRandomProbability(randomProbability r) { rand = r; }
-
-   protected ArrayList<RoamBehavior> roamBehaviors;
+   protected randomProbability rand;
+   public void setRandomProbability(randomProbability r) { rand = r; }
    private double[] probabilities;
 }

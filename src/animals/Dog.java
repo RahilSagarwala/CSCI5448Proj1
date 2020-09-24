@@ -1,11 +1,11 @@
 package animals;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
-import behaviors.Dig;
-import behaviors.Roam;
-import behaviors.RandomRoam;
-import behaviors.RoamBehavior;
+import behaviors.*;
+import behaviors.Behavior;
+import behaviors.ProbablisticMultipleBehavior;
 import nameGenerator.nameGenerator;
 
 
@@ -26,12 +26,9 @@ public class Dog extends Canine {
        * It accepts an array of RoamBehaviors and their probabilities.
        * RandomRoam's roam function is called in the abstract Animal class.
        */
-      roamBehavior = new RandomRoam();
-      ArrayList<RoamBehavior> roamBehaviors = new ArrayList<RoamBehavior>();
-      roamBehaviors.add(new Roam());
-      roamBehaviors.add(new Dig());
+      ArrayList<Behavior> roamBehaviors = new ArrayList<Behavior>(Arrays.asList(new Roam(), new Dig()));
       double[] probabilities = new double[] {0.75, 0.25};
-      boolean success = roamBehavior.setRoamBehaviors(roamBehaviors, probabilities);
+      roamBehavior = new ProbablisticMultipleBehavior(roamBehaviors, probabilities);
    }
 
    public Dog(nameGenerator ng) {

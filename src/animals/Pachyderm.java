@@ -3,12 +3,12 @@ package animals;
 //OO term abstract class
 //override Animal's methods which is an example of polymorphism
 
-import behaviors.Roam;
-import behaviors.Charge;
-import behaviors.RandomRoam;
-import behaviors.RoamBehavior;
+import behaviors.*;
+import behaviors.Behavior;
+import behaviors.ProbablisticMultipleBehavior;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 /*When a Pachyderm is given an exercise command,
  *there is a 25% chance it will charge instead of roam.
@@ -27,11 +27,8 @@ public abstract class Pachyderm extends Animal {
        * It accepts an array of RoamBehaviors and their probabilities.
        * RandomRoam's roam function is called in the abstract Animal class.
        */
-      roamBehavior = new RandomRoam();
-      ArrayList<RoamBehavior> roamBehaviors = new ArrayList<RoamBehavior>();
-      roamBehaviors.add(new Roam());
-      roamBehaviors.add(new Charge());
+      ArrayList<Behavior> roamBehaviors = new ArrayList<Behavior>(Arrays.asList(new Roam(), new Charge()));
       double[] probabilities = new double[] {0.75, 0.25};
-      boolean success = roamBehavior.setRoamBehaviors(roamBehaviors, probabilities);
+      roamBehavior = new ProbablisticMultipleBehavior(roamBehaviors, probabilities);
    }
 }

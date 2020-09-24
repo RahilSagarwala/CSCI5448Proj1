@@ -1,9 +1,9 @@
 package behaviors;
 import animals.Animal;
 
-public class Charge implements RoamBehavior {
+public class Charge implements Behavior {
 
-   public String roam(Animal animal) {
+   public String takeAction(Animal animal) {
       String output = animal.getName() + " the " + animal.getType() + " charges.";
       return output;
    }
