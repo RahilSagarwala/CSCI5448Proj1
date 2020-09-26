@@ -6,10 +6,12 @@ import clock.ZooClock;
 import observer.*;
 import nameGenerator.nameGenerator;
 
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ZooKeeper extends ZooEmployee implements iObserver {
+public class ZooKeeper extends ZooEmployee implements PropertyChangeListener {
 
    public ZooKeeper() {
       super();
@@ -33,11 +35,19 @@ public class ZooKeeper extends ZooEmployee implements iObserver {
    // Implement the update method of the observer interface allowing
    // the ZooKeeper to be an instance of iObserver interface.
    @Override
-   public void update(iSubject s) {
-      if (s instanceof ClockSubject){
+   public void propertyChange(PropertyChangeEvent e) {
+      if (e.getPropertyName() == "clock") {
          performTasks();
       }
    }
+   /*
+   @Override
+   public void update(iSubject s) {
+      if (s instanceof ZooClock){
+         performTasks();
+      }
+   }
+   */
 
    // This overridden method is an example of polymorphism
    @Override
@@ -219,4 +229,5 @@ public class ZooKeeper extends ZooEmployee implements iObserver {
    private static String myType = "Zoo Keeper";
    private List<Animal> responsibleAnimals;
    private Clock clock;
+
 }

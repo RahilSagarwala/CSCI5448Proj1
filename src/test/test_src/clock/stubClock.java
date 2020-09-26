@@ -1,6 +1,6 @@
 package clock;
 
-import observer.iObserver;
+import java.beans.PropertyChangeListener;
 import observer.iSubject;
 
 public class stubClock extends Clock {
@@ -37,17 +37,17 @@ public class stubClock extends Clock {
    }
 
    @Override
-   public void addObserver(iObserver o) {
+   public void addObserver(PropertyChangeListener o) {
 
    }
 
    @Override
-   public void removeObserver(iObserver o) {
+   public void removeObserver(PropertyChangeListener o) {
 
    }
 
    @Override
-   public void notifyObservers(iSubject s) {
+   public void notifyObservers(Object o, Object n) {
 
    }
 

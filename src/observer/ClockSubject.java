@@ -1,3 +1,4 @@
+/*
 package observer;
 
 import java.util.ArrayList;
@@ -38,3 +39,5 @@ public class ClockSubject implements iSubject {
 
    private List<iObserver> observers;
 }
+
+ */

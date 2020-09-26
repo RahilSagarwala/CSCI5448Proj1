@@ -4,7 +4,7 @@ import animals.*;
 import clock.ZooClock;
 import employees.*;
 import nameGenerator.nameGenerator;
-import observer.ClockSubject;
+//import observer.ClockSubject;
 import observer.iSubject;
 
 import java.io.BufferedReader;
