@@ -1,13 +1,12 @@
 package clock;
 
-import observer.ClockSubject;
-import observer.iObserver;
-import observer.iSubject;
+import java.beans.PropertyChangeListener;
+import java.beans.PropertyChangeSupport;
 
 public class ZooClock extends Clock {
    public ZooClock(){
       super();
-      subject = new ClockSubject();
+      subject = new PropertyChangeSupport(this);
       // Default to running for one day.
       numDays = 1;
       currentDay = 1;
@@ -55,23 +54,23 @@ public class ZooClock extends Clock {
    // Methods to make the clock object observable
    // The functionality is delegated to the clock subject object.
    @Override
-   public void addObserver(iObserver o) {
-      subject.addObserver(o);
+   public void addObserver(PropertyChangeListener o) {
+      subject.addPropertyChangeListener("clock",o);
    }
 
    @Override
-   public void removeObserver(iObserver o) {
-      subject.removeObserver(o);
+   public void removeObserver(PropertyChangeListener o) {
+      subject.removePropertyChangeListener("clock",o);
    }
 
    @Override
-   public void notifyObservers(iSubject s) {
-      subject.notifyObservers(this);
+   public void notifyObservers(Object oldObj, Object newObj) {
+      subject.firePropertyChange("clock", oldObj, newObj);
    }
 
    private void tick() {
       this.printTime();
-      this.notifyObservers(null);
+      this.notifyObservers(currentTime-1, currentTime);
       currentTime++;
    }
 
@@ -86,7 +85,7 @@ public class ZooClock extends Clock {
    }
 
    //Private Attributes
-   private iSubject subject;
+   private PropertyChangeSupport subject;
    private int currentTime;
    private int startTime;
    private int endTime;
