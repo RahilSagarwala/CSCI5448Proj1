@@ -40,14 +40,6 @@ public class ZooKeeper extends ZooEmployee implements PropertyChangeListener {
          performTasks();
       }
    }
-   /*
-   @Override
-   public void update(iSubject s) {
-      if (s instanceof ZooClock){
-         performTasks();
-      }
-   }
-   */
 
    // This overridden method is an example of polymorphism
    @Override
