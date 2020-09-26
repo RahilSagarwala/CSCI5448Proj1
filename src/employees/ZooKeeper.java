@@ -196,6 +196,9 @@ public class ZooKeeper extends ZooEmployee implements PropertyChangeListener {
    }
 
    // Protected method to handle performing zoo keeper tasks based on the time of day
+   // This is an example of the Pull implementation of Observer. When the zookeeper
+   // gets notified that the clock has been updated, it reaches out to the clock object
+   // to get the updated attributes it cares about.
    protected void performTasks() {
       int currTime = clock.getCurrentTime();
       int currDay = clock.getCurrentDay();
