@@ -46,7 +46,7 @@ public class ZooKeeper extends ZooEmployee implements PropertyChangeListener, iS
       }
    }
 
-   // This overridden method is an example of pogymorphism
+   // This overridden method is an example of polymorphism
    @Override
    public String getName() {
       return myName;
@@ -60,22 +60,22 @@ public class ZooKeeper extends ZooEmployee implements PropertyChangeListener, iS
 
    public void clean() {
       String output = this.getName() + " cleans the animal pens.";
-      System.out.println(output);
       this.publishChanges("clean the animal pens.");
+      System.out.println(output);
    }
 
    // This overridden method is an example of polymorphism
    @Override
    public void takeBreak() {
       String output = this.getName() + " takes break.";
-      System.out.println(output);
       this.publishChanges("take break.");
+      System.out.println(output);
    }
 
    public void playWithAnimals(){
       String output = this.getName() + " the " + this.getType() + " roll calls the animals they are responsible for.";
-      System.out.println(output);
       this.publishChanges("roll calls the animals they are responsible for.");
+      System.out.println(output);
 
       for (Animal a:responsibleAnimals) {
          this.playWithAnimal(a);
@@ -87,8 +87,8 @@ public class ZooKeeper extends ZooEmployee implements PropertyChangeListener, iS
       // abstract class is passed into the method, and the public methods of that concrete
       // implementation get accessed through the Animal abstract class.
       String output = this.getName() + " the " + this.getType() + " roll calls " + a.getName() + " the " + a.getType() + ".";
-      System.out.println(output);
       this.publishChanges("roll call " + a.getName() + " the " + a.getType() + ".");
+      System.out.println(output);
       // This is an example of abstraction since the zoo keeper doesn't know how the animal method is implemented
       // or what it will do - it only knows it follows the implicit contract that it is a void
       // method that takes no arguments.
@@ -99,8 +99,8 @@ public class ZooKeeper extends ZooEmployee implements PropertyChangeListener, iS
 
    public void chaseAnimals(){
       String output = this.getName() + " the " + this.getType() + " exercises the animals they are responsible for.";
-      System.out.println(output);
       this.publishChanges("exercise the animals they are responsible for.");
+      System.out.println(output);
       for (Animal a:responsibleAnimals) {
          this.chaseAnimal(a);
       }
@@ -111,8 +111,8 @@ public class ZooKeeper extends ZooEmployee implements PropertyChangeListener, iS
       // abstract class is passed into the method, and the public methods of that concrete
       // implementation get accessed through the Animal abstract class.
       String output = this.getName() + " the " + this.getType() + " exercises " + a.getName() + " the " + a.getType() + ".";
-      System.out.println(output);
       this.publishChanges("exercise " + a.getName() + " the " + a.getType() + ".");
+      System.out.println(output);
       // This is an example of abstraction since the zoo keeper doesn't know how the animal method is implemented
       // or what it will do - it only knows it follows the implicit contract that it is a void
       // method that takes no arguments.
@@ -123,8 +123,8 @@ public class ZooKeeper extends ZooEmployee implements PropertyChangeListener, iS
 
    public void feedAnimals(){
       String output = this.getName() + " the " + this.getType() + " feeds the animals they are responsible for.";
-      System.out.println(output);
       this.publishChanges("feed the animals they are responsible for.");
+      System.out.println(output);
       for (Animal a:responsibleAnimals) {
          this.feedAnimal(a);
       }
@@ -135,8 +135,8 @@ public class ZooKeeper extends ZooEmployee implements PropertyChangeListener, iS
       // abstract class is passed into the method, and the public methods of that concrete
       // implementation get accessed through the Animal abstract class.
       String output = this.getName() + " the " + this.getType() + " feeds " + a.getName() + " the " + a.getType() + ".";
-      System.out.println(output);
       this.publishChanges("feed " + a.getName() + " the " + a.getType() + ".");
+      System.out.println(output);
       // This is an example of abstraction since the zoo keeper doesn't know how the animal method is implemented
       // or what it will do - it only knows it follows the implicit contract that it is a void
       // method that takes no arguments.
@@ -147,8 +147,8 @@ public class ZooKeeper extends ZooEmployee implements PropertyChangeListener, iS
 
    public void wakeUpAnimals(){
       String output = this.getName() + " the " + this.getType() + " wakes up the animals they are responsible for.";
-      System.out.println(output);
       this.publishChanges("wake up the animals they are responsible for.");
+      System.out.println(output);
       for (Animal a:responsibleAnimals) {
          this.wakeUpAnimal(a);
       }
@@ -159,8 +159,8 @@ public class ZooKeeper extends ZooEmployee implements PropertyChangeListener, iS
       // abstract class is passed into the method, and the public methods of that concrete
       // implementation get accessed through the Animal abstract class.
       String output = this.getName() + " the " + this.getType() + " wakes up " + a.getName() + " the " + a.getType() + ".";
-      System.out.println(output);
       this.publishChanges("wake up " + a.getName() + " the " + a.getType() + ".");
+      System.out.println(output);
       // This is an example of abstraction since the zoo keeper doesn't know how the animal method is implemented
       // or what it will do - it only knows it follows the implicit contract that it is a void
       // method that takes no arguments.
@@ -171,8 +171,8 @@ public class ZooKeeper extends ZooEmployee implements PropertyChangeListener, iS
 
    public void putAnimalsToSleep(){
       String output = this.getName() + " the " + this.getType() + " puts the animals they are responsible for to sleep.";
-      System.out.println(output);
       this.publishChanges("put the animals they are responsible for to sleep.");
+      System.out.println(output);
       for (Animal a:responsibleAnimals) {
          this.putAnimalToSleep(a);
       }
@@ -183,8 +183,8 @@ public class ZooKeeper extends ZooEmployee implements PropertyChangeListener, iS
       // abstract class is passed into the method, and the public methods of that concrete
       // implementation get accessed through the Animal abstract class.
       String output = this.getName() + " the " + this.getType() + " puts " + a.getName() + " the " + a.getType() + " to sleep.";
-      System.out.println(output);
       this.publishChanges("put " + a.getName() + " the " + a.getType() + " to sleep.");
+      System.out.println(output);
       // This is an example of abstraction since the zoo keeper doesn't know how the animal method is implemented
       // or what it will do - it only knows it follows the implicit contract that it is a void
       // method that takes no arguments.
