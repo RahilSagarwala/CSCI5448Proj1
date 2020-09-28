@@ -11,9 +11,8 @@ import java.beans.PropertyChangeListener;
 import java.util.ArrayList;
 import java.util.List;
 import java.beans.PropertyChangeSupport;
-import java.beans.PropertyChangeListener;
 
-public class ZooKeeper extends ZooEmployee implements PropertyChangeListener {
+public class ZooKeeper extends ZooEmployee implements PropertyChangeListener, iSubject {
 
    public ZooKeeper() {
       super();
@@ -201,17 +200,22 @@ public class ZooKeeper extends ZooEmployee implements PropertyChangeListener {
     */
    private void publishChanges(String action) {
       ZooEmployeeActivity activity = new ZooEmployeeActivity(myName, myType, action);
-      support.firePropertyChange("", currentProperty, activity);
+      notifyObservers(currentProperty, activity);
       currentProperty = activity;
    }
 
+   @Override
+   public void notifyObservers(Object oldObj, Object newObj) {
+      support.firePropertyChange("zookeeper", oldObj, newObj);
+   }
+
    // Register a listener
-   public void addPropertyChangeListener(PropertyChangeListener listener) {
+   public void addObserver(PropertyChangeListener listener) {
       support.addPropertyChangeListener(listener);
    }
 
    // Remove a listener
-   public void removePropertyChangeListener(PropertyChangeListener listener) {
+   public void removeObserver(PropertyChangeListener listener) {
       support.removePropertyChangeListener(listener);
    }
 

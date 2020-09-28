@@ -56,7 +56,8 @@ public class Zoo_Main {
       // responsible for taking care of.
       ZooKeeper zk = new ZooKeeper(ng, zooAnimals, clock);
       ZooAnnouncer zooAnnouncer = new ZooAnnouncer();
-      zk.addPropertyChangeListener(zooAnnouncer);
+      zk.addObserver(zooAnnouncer);
+      clock.addObserver(zooAnnouncer);
 
       // Take input of the # of days to run
       // Buffered Reader code taken from:
