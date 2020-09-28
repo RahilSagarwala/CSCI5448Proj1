@@ -81,7 +81,6 @@ public class ZooFoodServer extends ZooEmployee {
 	   }
 
 	   // This overridden method is an example of polymorphism
-	   @Override
 	   public void clean() {
 	      String output = this.getName() + " cleans ";
 	      System.out.println(output);

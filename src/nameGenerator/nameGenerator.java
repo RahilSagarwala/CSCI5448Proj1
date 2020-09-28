@@ -24,7 +24,7 @@ public class nameGenerator {
                                entry('t', new String[]{"Tony", "Tiffany", "Tyler", "Tatiana"}),
                                entry('w', new String[]{"Walter", "Wendy", "Wesley", "Willow"}),
                                entry('y', new String[]{"Yasmeen", "Yolanda", "Yuri", "Yosef"}),
-                               entry('z', new String[]{"Zane", "Zeke", "Zoey", "Zelda"}));
+                               entry('z', new String[]{"Zane", "Zeke", "Zoey", "Zelda", "Zachary", "Zed", "Zara"}));
 
       usedNames = new HashSet<String>();
    }

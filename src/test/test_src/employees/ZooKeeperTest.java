@@ -9,10 +9,10 @@ import static org.junit.jupiter.api.Assertions.*;
 class ZooKeeperTest {
 
    @Test
-   void performTasksWakesAnimalsAt0800() {
+   void performTasksWakesAnimalsAt0900() {
       // Arrange
       stubClock c = new stubClock();
-      c.setCurrTime(8);
+      c.setCurrTime(9);
       mockZooKeeper mz = new mockZooKeeper(c);
 
       //Act
@@ -23,10 +23,10 @@ class ZooKeeperTest {
    }
 
    @Test
-   void performTasksPlaysWithAnimalsAt0900() {
+   void performTasksPlaysWithAnimalsAt1000() {
       // Arrange
       stubClock c = new stubClock();
-      c.setCurrTime(9);
+      c.setCurrTime(10);
       mockZooKeeper mz = new mockZooKeeper(c);
 
       //Act

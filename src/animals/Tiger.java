@@ -19,6 +19,7 @@ public class Tiger extends Feline {
       // Get unique name is an example of object identity since the name
       // generator gets a unique name for each instance of an object.
       myName = ng.getUniqueName(myType);
+      roamBehavior = new Stalk();
    }
 
    // This overridden method is an example of polymorphism
