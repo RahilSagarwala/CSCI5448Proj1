@@ -1,28 +1,51 @@
 package employees;
 
 import animals.*;
+import clock.Clock;
+import clock.ZooClock;
+import observer.*;
 import nameGenerator.nameGenerator;
 
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
+import java.util.ArrayList;
 import java.util.List;
 import java.beans.PropertyChangeSupport;
 import java.beans.PropertyChangeListener;
 
 
-public class ZooKeeper extends ZooEmployee {
+public class ZooKeeper extends ZooEmployee implements PropertyChangeListener {
 
    public ZooKeeper() {
       super();
       myName = "Name";
+
       support = new PropertyChangeSupport(this);
+      responsibleAnimals = new ArrayList<Animal>();
+      clock = new ZooClock();
    }
 
-   public ZooKeeper(nameGenerator ng, List<Animal> a){
+   public ZooKeeper(nameGenerator ng, List<Animal> a, Clock c){
       // Get unique name
       myName = ng.getUniqueName(this.getType());
       // Zoo keeper has a collection of animals they are responsible for
       // caring for.
       responsibleAnimals = a;
+     
       support = new PropertyChangeSupport(this);
+
+      // Store the clock to observe
+      clock = c;
+      clock.addObserver(this);
+   }
+
+   // Implement the update method of the observer interface allowing
+   // the ZooKeeper to be an instance of iObserver interface.
+   @Override
+   public void propertyChange(PropertyChangeEvent e) {
+      if (e.getPropertyName() == "clock") {
+         performTasks();
+      }
    }
 
    // This overridden method is an example of pogymorphism
@@ -193,6 +216,45 @@ public class ZooKeeper extends ZooEmployee {
       support.removePropertyChangeListener(listener);
    }
 
+   // public method to set the clock object
+   public void setClock(Clock c){
+      clock = c;
+   }
+
+   // public method to set the animals the zookeeper is responsible for
+   public void setResponsibleAnimals(List<Animal> a){
+      responsibleAnimals = a;
+   }
+
+   // Protected method to handle performing zoo keeper tasks based on the time of day
+   // This is an example of the Pull implementation of Observer. When the zookeeper
+   // gets notified that the clock has been updated, it reaches out to the clock object
+   // to get the updated attributes it cares about.
+   protected void performTasks() {
+      int currTime = clock.getCurrentTime();
+      int currDay = clock.getCurrentDay();
+      if (currTime == 7) {
+         arrivesAtZoo(currDay);
+      }
+      else if (currTime == 8) {
+         wakeUpAnimals();
+      }
+      else if (currTime == 9) {
+         playWithAnimals();
+      }
+      else if (currTime == 11) {
+         feedAnimals();
+      }
+      else if (currTime == 15) {
+         chaseAnimals();
+      }
+      else if (currTime == 19) {
+         putAnimalsToSleep();
+      }
+      else if (currTime == 21) {
+         leaveZoo(currDay);
+      }
+   }
 
    // Private member variables
    // Private member variables are an example of encapsulation that hide implementation
@@ -202,4 +264,6 @@ public class ZooKeeper extends ZooEmployee {
    private List<Animal> responsibleAnimals;
    private PropertyChangeSupport support;
    private ZooEmployeeActivity currentProperty;
+   private Clock clock;
+
 }
