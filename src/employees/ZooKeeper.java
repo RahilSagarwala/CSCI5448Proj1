@@ -10,12 +10,17 @@ import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 import java.util.ArrayList;
 import java.util.List;
+import java.beans.PropertyChangeSupport;
+import java.beans.PropertyChangeListener;
+
 
 public class ZooKeeper extends ZooEmployee implements PropertyChangeListener {
 
    public ZooKeeper() {
       super();
       myName = "Name";
+
+      support = new PropertyChangeSupport(this);
       responsibleAnimals = new ArrayList<Animal>();
       clock = new ZooClock();
    }
@@ -26,6 +31,8 @@ public class ZooKeeper extends ZooEmployee implements PropertyChangeListener {
       // Zoo keeper has a collection of animals they are responsible for
       // caring for.
       responsibleAnimals = a;
+     
+      support = new PropertyChangeSupport(this);
 
       // Store the clock to observe
       clock = c;
@@ -41,7 +48,7 @@ public class ZooKeeper extends ZooEmployee implements PropertyChangeListener {
       }
    }
 
-   // This overridden method is an example of polymorphism
+   // This overridden method is an example of pogymorphism
    @Override
    public String getName() {
       return myName;
@@ -53,11 +60,10 @@ public class ZooKeeper extends ZooEmployee implements PropertyChangeListener {
       return myType;
    }
 
-   // This overridden method is an example of polymorphism
-   @Override
    public void clean() {
       String output = this.getName() + " cleans the animal pens.";
       System.out.println(output);
+      this.publishChanges("clean the animal pens.");
    }
 
    // This overridden method is an example of polymorphism
@@ -65,11 +71,14 @@ public class ZooKeeper extends ZooEmployee implements PropertyChangeListener {
    public void takeBreak() {
       String output = this.getName() + " takes break.";
       System.out.println(output);
+      this.publishChanges("take break.");
    }
 
    public void playWithAnimals(){
       String output = this.getName() + " the " + this.getType() + " roll calls the animals they are responsible for.";
       System.out.println(output);
+      this.publishChanges("roll calls the animals they are responsible for.");
+
       for (Animal a:responsibleAnimals) {
          this.playWithAnimal(a);
       }
@@ -81,6 +90,7 @@ public class ZooKeeper extends ZooEmployee implements PropertyChangeListener {
       // implementation get accessed through the Animal abstract class.
       String output = this.getName() + " the " + this.getType() + " roll calls " + a.getName() + " the " + a.getType() + ".";
       System.out.println(output);
+      this.publishChanges("roll call " + a.getName() + " the " + a.getType() + ".");
       // This is an example of abstraction since the zoo keeper doesn't know how the animal method is implemented
       // or what it will do - it only knows it follows the implicit contract that it is a void
       // method that takes no arguments.
@@ -92,6 +102,7 @@ public class ZooKeeper extends ZooEmployee implements PropertyChangeListener {
    public void chaseAnimals(){
       String output = this.getName() + " the " + this.getType() + " exercises the animals they are responsible for.";
       System.out.println(output);
+      this.publishChanges("exercise the animals they are responsible for.");
       for (Animal a:responsibleAnimals) {
          this.chaseAnimal(a);
       }
@@ -103,6 +114,7 @@ public class ZooKeeper extends ZooEmployee implements PropertyChangeListener {
       // implementation get accessed through the Animal abstract class.
       String output = this.getName() + " the " + this.getType() + " exercises " + a.getName() + " the " + a.getType() + ".";
       System.out.println(output);
+      this.publishChanges("exercise " + a.getName() + " the " + a.getType() + ".");
       // This is an example of abstraction since the zoo keeper doesn't know how the animal method is implemented
       // or what it will do - it only knows it follows the implicit contract that it is a void
       // method that takes no arguments.
@@ -114,6 +126,7 @@ public class ZooKeeper extends ZooEmployee implements PropertyChangeListener {
    public void feedAnimals(){
       String output = this.getName() + " the " + this.getType() + " feeds the animals they are responsible for.";
       System.out.println(output);
+      this.publishChanges("feed the animals they are responsible for.");
       for (Animal a:responsibleAnimals) {
          this.feedAnimal(a);
       }
@@ -125,6 +138,7 @@ public class ZooKeeper extends ZooEmployee implements PropertyChangeListener {
       // implementation get accessed through the Animal abstract class.
       String output = this.getName() + " the " + this.getType() + " feeds " + a.getName() + " the " + a.getType() + ".";
       System.out.println(output);
+      this.publishChanges("feed " + a.getName() + " the " + a.getType() + ".");
       // This is an example of abstraction since the zoo keeper doesn't know how the animal method is implemented
       // or what it will do - it only knows it follows the implicit contract that it is a void
       // method that takes no arguments.
@@ -136,6 +150,7 @@ public class ZooKeeper extends ZooEmployee implements PropertyChangeListener {
    public void wakeUpAnimals(){
       String output = this.getName() + " the " + this.getType() + " wakes up the animals they are responsible for.";
       System.out.println(output);
+      this.publishChanges("wake up the animals they are responsible for.");
       for (Animal a:responsibleAnimals) {
          this.wakeUpAnimal(a);
       }
@@ -147,6 +162,7 @@ public class ZooKeeper extends ZooEmployee implements PropertyChangeListener {
       // implementation get accessed through the Animal abstract class.
       String output = this.getName() + " the " + this.getType() + " wakes up " + a.getName() + " the " + a.getType() + ".";
       System.out.println(output);
+      this.publishChanges("wake up " + a.getName() + " the " + a.getType() + ".");
       // This is an example of abstraction since the zoo keeper doesn't know how the animal method is implemented
       // or what it will do - it only knows it follows the implicit contract that it is a void
       // method that takes no arguments.
@@ -158,6 +174,7 @@ public class ZooKeeper extends ZooEmployee implements PropertyChangeListener {
    public void putAnimalsToSleep(){
       String output = this.getName() + " the " + this.getType() + " puts the animals they are responsible for to sleep.";
       System.out.println(output);
+      this.publishChanges("put the animals they are responsible for to sleep.");
       for (Animal a:responsibleAnimals) {
          this.putAnimalToSleep(a);
       }
@@ -169,12 +186,34 @@ public class ZooKeeper extends ZooEmployee implements PropertyChangeListener {
       // implementation get accessed through the Animal abstract class.
       String output = this.getName() + " the " + this.getType() + " puts " + a.getName() + " the " + a.getType() + " to sleep.";
       System.out.println(output);
+      this.publishChanges("put " + a.getName() + " the " + a.getType() + " to sleep.");
       // This is an example of abstraction since the zoo keeper doesn't know how the animal method is implemented
       // or what it will do - it only knows it follows the implicit contract that it is a void
       // method that takes no arguments.
       // This is also an example of polymorphism in use. The method on the abstract Animal class is being called,
       // but a different concrete implementation may actually be executed.
       a.sleep();
+   }
+
+   /*
+    * Observer Pattern.
+    * This function publishes changes (messages) to the registered listeners.
+    * It is called when ZooKeeper take an action.
+    */
+   private void publishChanges(String action) {
+      ZooEmployeeActivity activity = new ZooEmployeeActivity(myName, myType, action);
+      support.firePropertyChange("", currentProperty, activity);
+      currentProperty = activity;
+   }
+
+   // Register a listener
+   public void addPropertyChangeListener(PropertyChangeListener listener) {
+      support.addPropertyChangeListener(listener);
+   }
+
+   // Remove a listener
+   public void removePropertyChangeListener(PropertyChangeListener listener) {
+      support.removePropertyChangeListener(listener);
    }
 
    // public method to set the clock object
@@ -223,6 +262,8 @@ public class ZooKeeper extends ZooEmployee implements PropertyChangeListener {
    private String myName;
    private static String myType = "Zoo Keeper";
    private List<Animal> responsibleAnimals;
+   private PropertyChangeSupport support;
+   private ZooEmployeeActivity currentProperty;
    private Clock clock;
 
 }
