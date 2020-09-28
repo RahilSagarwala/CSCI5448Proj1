@@ -11,6 +11,7 @@ Rahil Sagarwala <br>
 - The names of all the animals at the zoo should be unique
 - Overriden behavior by various animals was developed by generating a different string to print than the default output.
 - The zoo keeper class can be assigned a collection of animals to act on at initialization, or it can act on individual animals.
+- The Zoo Clock runs for an hour prior to open when the employees arrive, to an hour after close when the employees leave for the day.
 
 ## Development Issues
 * Developing the output to be cross platform - our group noticed an issue between linux/windows in the newline vs. carriage returns in the unit tests. Java has a way to make the newline characters platform independent which allowed us to resolve that issue.

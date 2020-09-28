@@ -1,6 +1,7 @@
 package zoo;
 
 import animals.*;
+import clock.ZooClock;
 import employees.*;
 import nameGenerator.nameGenerator;
 
@@ -43,12 +44,19 @@ public class Zoo_Main {
          }
       }
 
+      // Instantiate the clock object
+      clock.Clock clock = new ZooClock();
+      clock.setClockStart(7);
+      clock.setClockEnd(21);
+
       // Instantiate the zoo keeper object.
       // The zoo keeper will get a unique name which can be used as the objects identity
       // provided to it by the name generator
       // and it also takes in a collection of animal objects that the zookeeper is
       // responsible for taking care of.
-      ZooKeeper zk = new ZooKeeper(ng, zooAnimals);
+      ZooKeeper zk = new ZooKeeper(ng, zooAnimals, clock);
+      ZooAnnouncer zooAnnouncer = new ZooAnnouncer();
+      zk.addPropertyChangeListener(zooAnnouncer);
 
       // Take input of the # of days to run
       // Buffered Reader code taken from:
@@ -62,22 +70,19 @@ public class Zoo_Main {
          e.printStackTrace();
       }
 
-      // Loop for the number of days, having the zookeeper
-      //      Arrive at the zoo
-      //      Wake the animals
-      //      Roll Call the animals (make noise)
-      //      Feed the animals
-      //      Exercise the animals (roam)
-      //      Put animals to sleep
-      //      leave the zoo
+      // Have the clock run for the number of days.
+      // The necessary classes observe the clock and perform
+      // their tasks based on the time of day.
       if( numDays <= 0 ){
          System.out.println("Error: Must enter number > 0 for the number of days to run.");
          System.exit(1);
       }
+/*
       for(int i=0; i < numDays; i++){
          int day = i + 1;
          String output = "~~~~~~~~~~~~~~~~~ Day " + day + " ~~~~~~~~~~~~~~~~~";
          System.out.println(output);
+         zooAnnouncer.arrivesAtZoo(day);
          zk.arrivesAtZoo(day);
          zk.wakeUpAnimals();
          zk.playWithAnimals();
@@ -85,6 +90,10 @@ public class Zoo_Main {
          zk.chaseAnimals();
          zk.putAnimalsToSleep();
          zk.leaveZoo(day);
+         zooAnnouncer.leaveZoo(day);
       }
+*/
+      clock.setClockDays(numDays);
+      clock.startClock();
    }
 }
