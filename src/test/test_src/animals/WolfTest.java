@@ -46,7 +46,7 @@ class WolfTest {
       r.setRet(0);
       wolf.setRandomChance(r);
       wolf.roam();
-      assertEquals("Name the Wolf digs." + nL, sOut.toString());
+      assertEquals("Name the Wolf roams." + nL, sOut.toString());
    }
 
    @org.junit.jupiter.api.Test

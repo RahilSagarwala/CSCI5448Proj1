@@ -77,22 +77,7 @@ public class Zoo_Main {
          System.out.println("Error: Must enter number > 0 for the number of days to run.");
          System.exit(1);
       }
-/*
-      for(int i=0; i < numDays; i++){
-         int day = i + 1;
-         String output = "~~~~~~~~~~~~~~~~~ Day " + day + " ~~~~~~~~~~~~~~~~~";
-         System.out.println(output);
-         zooAnnouncer.arrivesAtZoo(day);
-         zk.arrivesAtZoo(day);
-         zk.wakeUpAnimals();
-         zk.playWithAnimals();
-         zk.feedAnimals();
-         zk.chaseAnimals();
-         zk.putAnimalsToSleep();
-         zk.leaveZoo(day);
-         zooAnnouncer.leaveZoo(day);
-      }
-*/
+
       clock.setClockDays(numDays);
       clock.startClock();
    }

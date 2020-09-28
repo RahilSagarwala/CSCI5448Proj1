@@ -36,6 +36,19 @@ public class Dog extends Canine {
 
       // Get unique name is an example of object identity.
       myName = ng.getUniqueName(myType);
+
+      /*When a Dog is given the exercise command by the Zookeeper,
+       *there is a 25% chance the dog will dig instead of roaming.
+       */
+      /*
+       * Strategy Pattern is used here.
+       * It assigns the roam behavior to RandomRoam implementation.
+       * It accepts an array of RoamBehaviors and their probabilities.
+       * RandomRoam's roam function is called in the abstract Animal class.
+       */
+      ArrayList<Behavior> roamBehaviors = new ArrayList<Behavior>(Arrays.asList(new Roam(), new Dig()));
+      double[] probabilities = new double[] {0.75, 0.25};
+      roamBehavior = new ProbablisticMultipleBehavior(roamBehaviors, probabilities);
    }
 
    // This overridden method is an example of polymorphism

@@ -35,7 +35,7 @@ class CanineTest {
       r.setRet(0);
       animal.setRandomChance(r);
       animal.roam();
-      assertEquals("Name the Canine digs." + nL, sOut.toString());
+      assertEquals("Name the Canine roams." + nL, sOut.toString());
    }
 
    @org.junit.jupiter.api.Test

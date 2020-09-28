@@ -41,22 +41,6 @@ class DogTest {
    }
 
    @org.junit.jupiter.api.Test
-   void dog_roam_rand_0() {
-      r.setRet(0);
-      dog.setRandomChance(r);
-      dog.roam();
-      assertEquals("Name the Dog digs." + nL, sOut.toString());
-   }
-
-   @org.junit.jupiter.api.Test
-   void dog_roam_rand_1() {
-      r.setRet(1);
-      dog.setRandomChance(r);
-      dog.roam();
-      assertEquals("Name the Dog roams." + nL, sOut.toString());
-   }
-
-   @org.junit.jupiter.api.Test
    void dog_name_starts_with_d() {
       nameGenerator ng = new nameGenerator();
       Animal d = new Dog(ng);
