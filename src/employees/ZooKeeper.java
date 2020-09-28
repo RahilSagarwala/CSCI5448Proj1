@@ -239,10 +239,10 @@ public class ZooKeeper extends ZooEmployee implements PropertyChangeListener, iS
       if (currTime == 7) {
          arrivesAtZoo(currDay);
       }
-      else if (currTime == 8) {
+      else if (currTime == 9) {
          wakeUpAnimals();
       }
-      else if (currTime == 9) {
+      else if (currTime == 10) {
          playWithAnimals();
       }
       else if (currTime == 11) {
