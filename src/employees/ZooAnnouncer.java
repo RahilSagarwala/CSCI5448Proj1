@@ -54,6 +54,9 @@ public class ZooAnnouncer extends ZooEmployee implements PropertyChangeListener 
       else if (e.getPropertyName() == "clock"){
          clockTasks();
       }
+      else if (e.getPropertyName() == "food server"){
+         zooFood((String) e.getNewValue());
+      }
    }
 
    public void setClock(Clock c){
@@ -75,6 +78,14 @@ public class ZooAnnouncer extends ZooEmployee implements PropertyChangeListener 
       }
       else if (currTime == 21){
          leaveZoo(currDay);
+      }
+   }
+
+   private void zooFood(String action){
+      if (action.contains("serve")){
+         String output = "Hi, this is " + myName + " the " + myType +
+               ". The food server is about to " + action + "!";
+         System.out.println(output);
       }
    }
 
