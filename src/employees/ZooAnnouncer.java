@@ -44,17 +44,17 @@ public class ZooAnnouncer extends ZooEmployee implements PropertyChangeListener 
    // Listens to the ZooKeeper's property changes (messages)
    public void propertyChange(PropertyChangeEvent e) {
       // propertyName can be retrieved by e.getPropertyName();
-      if (e.getPropertyName() == "zookeeper") {
+      if (e.getPropertyName().equals("zookeeper")) {
          // so that we can change the behavior according to the name
          ZooEmployeeActivity activity = (ZooEmployeeActivity) e.getNewValue();
          String first_sentence = "Hi, this is " + this.getName() + " the " + this.getType() + ". ";
          String second_sentence = activity.getName() + " the " + activity.getType() + " is about to " + activity.getAction();
          System.out.println(first_sentence + second_sentence);
       }
-      else if (e.getPropertyName() == "clock"){
+      else if (e.getPropertyName().equals("clock")){
          clockTasks();
       }
-      else if (e.getPropertyName() == "food server"){
+      else if (e.getPropertyName().equals("food server")){
          zooFood((String) e.getNewValue());
       }
    }

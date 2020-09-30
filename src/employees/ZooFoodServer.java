@@ -54,13 +54,13 @@ public class ZooFoodServer extends ZooEmployee implements iSubject, PropertyChan
    // the ZooKeeper to be an instance of iObserver interface.
 	@Override
 	public void propertyChange(PropertyChangeEvent e) {
-	   if (e.getPropertyName() == "clock") {
+	   if (e.getPropertyName().equals("clock")) {
 	      performTasks();
 	   }
 	}
 
    // Protected method to handle performing zoo food server tasks based on the time of day
-   // This is an example of the Pull implementation of Observer. When the zoo foos server
+   // This is an example of the Pull implementation of Observer. When the zoo food server
    // gets notified that the clock has been updated, it reaches out to the clock object
    // to get the updated attributes it cares about.
    protected void performTasks() {
