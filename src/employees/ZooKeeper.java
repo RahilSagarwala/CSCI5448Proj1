@@ -41,7 +41,7 @@ public class ZooKeeper extends ZooEmployee implements PropertyChangeListener, iS
    // the ZooKeeper to be an instance of iObserver interface.
    @Override
    public void propertyChange(PropertyChangeEvent e) {
-      if (e.getPropertyName() == "clock") {
+      if (e.getPropertyName().equals("clock")) {
          performTasks();
       }
    }
