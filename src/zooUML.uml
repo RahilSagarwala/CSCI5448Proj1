@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="356.06456095987323" y="1397.0">behaviors.MultipleBehavior</node>
+    <node x="239.39852673368205" y="2174.5">animals.Pachyderm</node>
+    <node x="487.112493929681" y="2326.0">animals.Rhino</node>
+    <node x="1356.55622762654" y="574.0">animals.Animal</node>
+    <node x="3505.416666666667" y="214.0">clock.Clock</node>
+    <node x="1985.8333333333335" y="1409.5">behaviors.Stalk</node>
+    <node x="3763.666666666667" y="1229.0">employees.ZooFoodServer</node>
+    <node x="1466.3333333333335" y="274.0">randomChance.randomChance</node>
+    <node x="1113.5833333333335" y="24.0">behaviors.Behavior</node>
+    <node x="902.6478942932065" y="1409.5">behaviors.HeadButt</node>
+    <node x="1046.4818600670155" y="2326.0">animals.Yak</node>
+    <node x="3418.916666666667" y="0.0">observer.iSubject</node>
+    <node x="3518.166666666667" y="490.0">clock.ZooClock</node>
+    <node x="1097.7708272630143" y="274.0">behaviors.Roam</node>
+    <node x="2903.94645970349" y="1397.0">employees.ZooKeeperListener</node>
+    <node x="2648.4237324307624" y="634.0">employees.ZooEmployeeActivity</node>
+    <node x="1796.8333333333335" y="1870.0">animals.Tiger</node>
+    <node x="1608.8333333333335" y="1870.0">animals.Lion</node>
+    <node x="468.6478942932065" y="1870.0">behaviors.ProbablisticMultipleBehavior</node>
+    <node x="188.0" y="2326.0">animals.Elephant</node>
+    <node x="3279.94645970349" y="1277.0">employees.ZooAnnouncer</node>
+    <node x="1420.8333333333335" y="1870.0">animals.Cat</node>
+    <node x="998.1776873300296" y="2174.5">animals.Bovinae</node>
+    <node x="1593.6395609598735" y="1409.5">animals.Feline</node>
+    <node x="86.06456095987323" y="1409.5">behaviors.Charge</node>
+    <node x="1286.8333333333335" y="1918.5">animals.Canine</node>
+    <node x="858.4818600670155" y="2326.0">animals.Buffalo</node>
+    <node x="3495.4193539966964" y="1918.5">zoo.Zoo_Main</node>
+    <node x="3049.794360067015" y="646.5">employees.ZooEmployee</node>
+    <node x="1231.3333333333335" y="2113.0">animals.Wolf</node>
+    <node x="637.0645609598732" y="1409.5">randomChance.randomProbability</node>
+    <node x="0.0" y="2326.0">animals.Hippo</node>
+    <node x="2259.94645970349" y="1409.5">behaviors.Dig</node>
+    <node x="2507.94645970349" y="1085.0">employees.ZooKeeper</node>
+    <node x="2073.4193539966964" y="2113.0">animals.Dog</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="behaviors.MultipleBehavior" target="animals.Animal">
+      <point x="86.66666666666663" y="-40.5" />
+      <point x="572.7312276265397" y="1015.0" />
+      <point x="1419.55622762654" y="1015.0" />
+      <point x="-99.0" y="148.5" />
+    </edge>
+    <edge source="animals.Hippo" target="animals.Pachyderm">
+      <point x="42.0" y="-76.5" />
+      <point x="126.0" y="2296.0" />
+      <point x="269.39852673368205" y="2296.0" />
+      <point x="-30.0" y="15.0" />
+    </edge>
+    <edge source="animals.Buffalo" target="animals.Bovinae">
+      <point x="42.0" y="-76.5" />
+      <point x="984.4818600670155" y="2306.0" />
+      <point x="1037.1776873300296" y="2306.0" />
+      <point x="-13.0" y="15.0" />
+    </edge>
+    <edge source="behaviors.ProbablisticMultipleBehavior" target="behaviors.MultipleBehavior">
+      <point x="-177.0" y="-76.5" />
+      <point x="498.1478942932065" y="1850.0" />
+      <point x="421.06456095987323" y="1850.0" />
+      <point x="-65.0" y="40.5" />
+    </edge>
+    <edge source="animals.Feline" target="animals.Animal">
+      <point x="-32.0" y="-28.0" />
+      <point x="1625.6395609598735" y="1065.0" />
+      <point x="1527.55622762654" y="1065.0" />
+      <point x="9.0" y="148.5" />
+    </edge>
+    <edge source="animals.Dog" target="behaviors.Dig">
+      <point x="42.0" y="-76.5" />
+      <point x="2199.4193539966964" y="2083.0" />
+      <point x="2373.44645970349" y="2083.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="behaviors.ProbablisticMultipleBehavior" target="animals.Animal">
+      <point x="177.0" y="-76.5" />
+      <point x="852.1478942932065" y="1850.0" />
+      <point x="855.5645609598731" y="1850.0" />
+      <point x="855.5645609598731" y="1025.0" />
+      <point x="1437.55622762654" y="1025.0" />
+      <point x="-81.0" y="148.5" />
+    </edge>
+    <edge source="animals.Bovinae" target="animals.Animal">
+      <point x="43.33333333333326" y="-15.0" />
+      <point x="1093.5110206633628" y="2093.0" />
+      <point x="1217.6964597034898" y="2093.0" />
+      <point x="1217.6964597034898" y="1055.0" />
+      <point x="1491.55622762654" y="1055.0" />
+      <point x="-27.0" y="148.5" />
+    </edge>
+    <edge source="animals.Pachyderm" target="behaviors.ProbablisticMultipleBehavior">
+      <point x="50.0" y="-15.0" />
+      <point x="349.39852673368205" y="2093.0" />
+      <point x="537.4812276265397" y="2093.0" />
+      <point x="-137.66666666666663" y="76.5" />
+    </edge>
+    <edge source="animals.Bovinae" target="behaviors.HeadButt">
+      <point x="-8.666666666666742" y="-15.0" />
+      <point x="1041.5110206633628" y="2073.0" />
+      <point x="1016.1478942932065" y="2073.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="employees.ZooKeeper" target="employees.ZooEmployee">
+      <point x="102.5454545454545" y="-352.5" />
+      <point x="2798.4919142489443" y="1035.0" />
+      <point x="3062.356860067015" y="1035.0" />
+      <point x="-87.9375" y="76.0" />
+    </edge>
+    <edge source="animals.Wolf" target="animals.Canine">
+      <point x="0.0" y="-76.5" />
+      <point x="-28.5" y="28.0" />
+    </edge>
+    <edge source="employees.ZooFoodServer" target="employees.ZooEmployee">
+      <point x="-94.0" y="-208.5" />
+      <point x="3857.666666666667" y="985.0" />
+      <point x="3238.231860067015" y="985.0" />
+      <point x="87.9375" y="76.0" />
+    </edge>
+    <edge source="animals.Animal" target="randomChance.randomChance">
+      <point x="-60.75" y="-148.5" />
+      <point x="1457.80622762654" y="420.0" />
+      <point x="1495.166666666667" y="420.0" />
+      <point x="-57.66666666666674" y="28.0" />
+    </edge>
+    <edge source="behaviors.Dig" target="behaviors.Behavior">
+      <point x="56.75" y="-28.0" />
+      <point x="2430.19645970349" y="154.0" />
+      <point x="1316.261904761905" y="154.0" />
+      <point x="89.17857142857156" y="28.0" />
+    </edge>
+    <edge source="animals.Tiger" target="behaviors.Stalk">
+      <point x="56.0" y="-76.5" />
+      <point x="1936.8333333333335" y="1850.0" />
+      <point x="2099.3333333333335" y="1850.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="behaviors.HeadButt" target="animals.Animal">
+      <point x="56.75" y="-28.0" />
+      <point x="1072.8978942932065" y="1035.0" />
+      <point x="1455.55622762654" y="1035.0" />
+      <point x="-63.0" y="148.5" />
+    </edge>
+    <edge source="animals.Animal" target="behaviors.Roam">
+      <point x="-141.75" y="-148.5" />
+      <point x="1376.80622762654" y="470.0" />
+      <point x="1211.2708272630143" y="470.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="animals.Tiger" target="animals.Animal">
+      <point x="0.0" y="-76.5" />
+      <point x="1880.8333333333335" y="1045.0" />
+      <point x="1563.55622762654" y="1045.0" />
+      <point x="45.0" y="148.5" />
+    </edge>
+    <edge source="zoo.Zoo_Main" target="employees.ZooAnnouncer">
+      <point x="-19.77777777777783" y="-28.0" />
+      <point x="3564.641576218918" y="1820.0" />
+      <point x="3368.94645970349" y="1820.0" />
+      <point x="-89.0" y="160.5" />
+    </edge>
+    <edge source="behaviors.Roam" target="behaviors.Behavior">
+      <point x="0.0" y="-28.0" />
+      <point x="1211.2708272630143" y="194.0" />
+      <point x="1235.1904761904764" y="194.0" />
+      <point x="8.10714285714289" y="28.0" />
+    </edge>
+    <edge source="behaviors.HeadButt" target="behaviors.Behavior">
+      <point x="-56.75" y="-28.0" />
+      <point x="959.3978942932065" y="184.0" />
+      <point x="1218.9761904761906" y="184.0" />
+      <point x="-8.10714285714289" y="28.0" />
+    </edge>
+    <edge source="animals.Pachyderm" target="behaviors.Roam">
+      <point x="-10.0" y="-15.0" />
+      <point x="289.39852673368205" y="2063.0" />
+      <point x="323.56456095987323" y="2063.0" />
+      <point x="323.56456095987323" y="470.0" />
+      <point x="1120.4708272630144" y="470.0" />
+      <point x="-90.79999999999995" y="28.0" />
+    </edge>
+    <edge source="employees.ZooAnnouncer" target="clock.Clock">
+      <point x="29.666666666666515" y="-160.5" />
+      <point x="3487.6131263701564" y="1055.0" />
+      <point x="3496.666666666667" y="1055.0" />
+      <point x="3496.666666666667" y="460.0" />
+      <point x="3568.854166666667" y="460.0" />
+      <point x="-38.0625" y="88.0" />
+    </edge>
+    <edge source="employees.ZooKeeper" target="clock.Clock">
+      <point x="-34.18181818181802" y="-352.5" />
+      <point x="2661.764641521672" y="1065.0" />
+      <point x="2634.5918499902873" y="1065.0" />
+      <point x="2634.5918499902873" y="450.0" />
+      <point x="3543.479166666667" y="450.0" />
+      <point x="-63.4375" y="88.0" />
+    </edge>
+    <edge source="employees.ZooKeeper" target="animals.Animal">
+      <point x="-170.909090909091" y="-352.5" />
+      <point x="2525.037368794399" y="995.0" />
+      <point x="1653.55622762654" y="995.0" />
+      <point x="135.0" y="148.5" />
+    </edge>
+    <edge source="animals.Dog" target="behaviors.Behavior">
+      <point x="70.0" y="-76.5" />
+      <point x="2227.4193539966964" y="2093.0" />
+      <point x="2497.44645970349" y="2093.0" />
+      <point x="2497.44645970349" y="144.0" />
+      <point x="1332.4761904761908" y="144.0" />
+      <point x="105.39285714285722" y="28.0" />
+    </edge>
+    <edge source="behaviors.ProbablisticMultipleBehavior" target="randomChance.randomProbability">
+      <point x="0.0" y="-76.5" />
+      <point x="675.1478942932065" y="1850.0" />
+      <point x="671.7312276265399" y="1850.0" />
+      <point x="-69.33333333333337" y="28.0" />
+    </edge>
+    <edge source="behaviors.MultipleBehavior" target="behaviors.Behavior">
+      <point x="0.0" y="-40.5" />
+      <point x="486.06456095987323" y="154.0" />
+      <point x="1170.3333333333335" y="154.0" />
+      <point x="-56.75" y="28.0" />
+    </edge>
+    <edge source="employees.ZooAnnouncer" target="employees.ZooEmployeeActivity">
+      <point x="-148.33333333333348" y="-160.5" />
+      <point x="3309.6131263701564" y="1025.0" />
+      <point x="2823.4237324307624" y="1025.0" />
+      <point x="75.0" y="88.5" />
+    </edge>
+    <edge source="animals.Dog" target="behaviors.Roam">
+      <point x="14.0" y="-76.5" />
+      <point x="2171.4193539966964" y="2073.0" />
+      <point x="2249.44645970349" y="2073.0" />
+      <point x="2249.44645970349" y="410.0" />
+      <point x="1302.0708272630143" y="410.0" />
+      <point x="90.79999999999995" y="28.0" />
+    </edge>
+    <edge source="animals.Dog" target="behaviors.ProbablisticMultipleBehavior">
+      <point x="-70.0" y="-76.5" />
+      <point x="2087.4193539966964" y="2063.0" />
+      <point x="812.814560959873" y="2063.0" />
+      <point x="137.66666666666652" y="76.5" />
+    </edge>
+    <edge source="behaviors.ProbablisticMultipleBehavior" target="behaviors.Behavior">
+      <point x="-59.0" y="-76.5" />
+      <point x="616.1478942932065" y="1850.0" />
+      <point x="626.5645609598732" y="1850.0" />
+      <point x="626.5645609598732" y="164.0" />
+      <point x="1186.5476190476193" y="164.0" />
+      <point x="-40.53571428571422" y="28.0" />
+    </edge>
+    <edge source="zoo.Zoo_Main" target="animals.Animal">
+      <point x="-79.11111111111131" y="-28.0" />
+      <point x="3505.308242885585" y="1850.0" />
+      <point x="2223.3333333333335" y="1850.0" />
+      <point x="2223.3333333333335" y="1015.0" />
+      <point x="1617.55622762654" y="1015.0" />
+      <point x="99.0" y="148.5" />
+    </edge>
+    <edge source="animals.Pachyderm" target="behaviors.Behavior">
+      <point x="-50.0" y="-15.0" />
+      <point x="249.39852673368205" y="2093.0" />
+      <point x="75.56456095987323" y="2093.0" />
+      <point x="75.56456095987323" y="124.0" />
+      <point x="1121.6904761904764" y="124.0" />
+      <point x="-105.39285714285711" y="28.0" />
+    </edge>
+    <edge source="animals.Yak" target="animals.Bovinae">
+      <point x="-42.0" y="-76.5" />
+      <point x="1088.4818600670155" y="2306.0" />
+      <point x="1063.1776873300296" y="2306.0" />
+      <point x="13.0" y="15.0" />
+    </edge>
+    <edge source="clock.ZooClock" target="clock.Clock">
+      <point x="0.0" y="-232.5" />
+      <point x="3706.166666666667" y="470.0" />
+      <point x="3619.604166666667" y="470.0" />
+      <point x="12.6875" y="88.0" />
+    </edge>
+    <edge source="employees.ZooKeeper" target="observer.iSubject">
+      <point x="-102.5454545454545" y="-352.5" />
+      <point x="2593.4010051580353" y="1065.0" />
+      <point x="2606.4980999902873" y="1065.0" />
+      <point x="2606.4980999902873" y="194.0" />
+      <point x="3481.5833333333335" y="194.0" />
+      <point x="-125.33333333333348" y="52.0" />
+    </edge>
+    <edge source="employees.ZooAnnouncer" target="employees.ZooEmployee">
+      <point x="-29.666666666666515" y="-160.5" />
+      <point x="3428.2797930368233" y="1005.0" />
+      <point x="3187.981860067015" y="1005.0" />
+      <point x="37.6875" y="76.0" />
+    </edge>
+    <edge source="employees.ZooKeeper" target="employees.ZooEmployeeActivity">
+      <point x="0.0" y="-352.5" />
+      <point x="2695.94645970349" y="1065.0" />
+      <point x="2673.4237324307624" y="1065.0" />
+      <point x="-75.0" y="88.5" />
+    </edge>
+    <edge source="employees.ZooFoodServer" target="clock.ZooClock">
+      <point x="-31.333333333333485" y="-208.5" />
+      <point x="3920.3333333333335" y="975.0" />
+      <point x="3847.166666666667" y="975.0" />
+      <point x="141.0" y="232.5" />
+    </edge>
+    <edge source="zoo.Zoo_Main" target="employees.ZooFoodServer">
+      <point x="39.55555555555566" y="-28.0" />
+      <point x="3623.974909552252" y="1830.0" />
+      <point x="3857.666666666667" y="1830.0" />
+      <point x="-94.0" y="208.5" />
+    </edge>
+    <edge source="behaviors.Stalk" target="behaviors.Behavior">
+      <point x="56.75" y="-28.0" />
+      <point x="2156.0833333333335" y="1065.0" />
+      <point x="2204.82145970349" y="1065.0" />
+      <point x="2204.82145970349" y="164.0" />
+      <point x="1300.0476190476193" y="164.0" />
+      <point x="72.96428571428578" y="28.0" />
+    </edge>
+    <edge source="employees.ZooKeeperListener" target="employees.ZooEmployee">
+      <point x="-89.0" y="-40.5" />
+      <point x="2992.94645970349" y="1055.0" />
+      <point x="3112.606860067015" y="1055.0" />
+      <point x="-37.6875" y="76.0" />
+    </edge>
+    <edge source="behaviors.Behavior" target="animals.Animal">
+      <point x="24.32142857142867" y="28.0" />
+      <point x="1251.4047619047622" y="194.0" />
+      <point x="1649.8333333333335" y="194.0" />
+      <point x="1649.8333333333335" y="450.0" />
+      <point x="1579.30622762654" y="450.0" />
+      <point x="60.75" y="-148.5" />
+    </edge>
+    <edge source="animals.Dog" target="animals.Animal">
+      <point x="-14.0" y="-76.5" />
+      <point x="2143.4193539966964" y="2043.0" />
+      <point x="1975.3333333333335" y="2043.0" />
+      <point x="1975.3333333333335" y="1035.0" />
+      <point x="1581.55622762654" y="1035.0" />
+      <point x="63.0" y="148.5" />
+    </edge>
+    <edge source="employees.ZooFoodServer" target="clock.Clock">
+      <point x="94.0" y="-208.5" />
+      <point x="4045.666666666667" y="1065.0" />
+      <point x="4070.7214373300294" y="1065.0" />
+      <point x="4070.7214373300294" y="450.0" />
+      <point x="3670.354166666667" y="450.0" />
+      <point x="63.4375" y="88.0" />
+    </edge>
+    <edge source="animals.Elephant" target="animals.Pachyderm">
+      <point x="-42.0" y="-76.5" />
+      <point x="230.0" y="2306.0" />
+      <point x="289.39852673368205" y="2306.0" />
+      <point x="-10.0" y="15.0" />
+    </edge>
+    <edge source="animals.Animal" target="behaviors.Behavior">
+      <point x="141.75" y="-148.5" />
+      <point x="1660.30622762654" y="470.0" />
+      <point x="1671.8333333333335" y="470.0" />
+      <point x="1671.8333333333335" y="174.0" />
+      <point x="1283.8333333333335" y="174.0" />
+      <point x="56.75" y="28.0" />
+    </edge>
+    <edge source="zoo.Zoo_Main" target="clock.Clock">
+      <point x="79.11111111111131" y="-28.0" />
+      <point x="3663.5304651078077" y="1850.0" />
+      <point x="4150.166666666667" y="1850.0" />
+      <point x="4150.166666666667" y="440.0" />
+      <point x="3695.729166666667" y="440.0" />
+      <point x="88.8125" y="88.0" />
+    </edge>
+    <edge source="animals.Bovinae" target="behaviors.ProbablisticMultipleBehavior">
+      <point x="-43.33333333333326" y="-15.0" />
+      <point x="1006.8443539966963" y="2093.0" />
+      <point x="675.1478942932065" y="2093.0" />
+      <point x="0.0" y="76.5" />
+    </edge>
+    <edge source="behaviors.Stalk" target="animals.Animal">
+      <point x="-56.75" y="-28.0" />
+      <point x="2042.5833333333335" y="1025.0" />
+      <point x="1599.55622762654" y="1025.0" />
+      <point x="81.0" y="148.5" />
+    </edge>
+    <edge source="animals.Dog" target="animals.Canine">
+      <point x="-42.0" y="-76.5" />
+      <point x="2115.4193539966964" y="2053.0" />
+      <point x="1372.3333333333335" y="2053.0" />
+      <point x="28.5" y="28.0" />
+    </edge>
+    <edge source="animals.Tiger" target="animals.Feline">
+      <point x="-56.0" y="-76.5" />
+      <point x="1824.8333333333335" y="1850.0" />
+      <point x="1700.30622762654" y="1850.0" />
+      <point x="42.66666666666674" y="28.0" />
+    </edge>
+    <edge source="behaviors.Charge" target="behaviors.Behavior">
+      <point x="-56.75" y="-28.0" />
+      <point x="142.81456095987323" y="134.0" />
+      <point x="1137.904761904762" y="134.0" />
+      <point x="-89.17857142857144" y="28.0" />
+    </edge>
+    <edge source="animals.Bovinae" target="behaviors.Roam">
+      <point x="8.666666666666742" y="-15.0" />
+      <point x="1058.8443539966963" y="2073.0" />
+      <point x="1140.1478942932065" y="2073.0" />
+      <point x="1140.1478942932065" y="470.0" />
+      <point x="1165.8708272630142" y="470.0" />
+      <point x="-45.40000000000009" y="28.0" />
+    </edge>
+    <edge source="behaviors.Charge" target="animals.Animal">
+      <point x="56.75" y="-28.0" />
+      <point x="256.31456095987323" y="985.0" />
+      <point x="1365.55622762654" y="985.0" />
+      <point x="-153.0" y="148.5" />
+    </edge>
+    <edge source="behaviors.Dig" target="animals.Animal">
+      <point x="-56.75" y="-28.0" />
+      <point x="2316.69645970349" y="1005.0" />
+      <point x="1635.55622762654" y="1005.0" />
+      <point x="117.0" y="148.5" />
+    </edge>
+    <edge source="animals.Bovinae" target="behaviors.Behavior">
+      <point x="-26.0" y="-15.0" />
+      <point x="1024.1776873300296" y="2083.0" />
+      <point x="892.1478942932065" y="2083.0" />
+      <point x="892.1478942932065" y="174.0" />
+      <point x="1202.761904761905" y="174.0" />
+      <point x="-24.321428571428555" y="28.0" />
+    </edge>
+    <edge source="behaviors.Roam" target="animals.Animal">
+      <point x="45.40000000000009" y="28.0" />
+      <point x="1256.6708272630144" y="460.0" />
+      <point x="1417.30622762654" y="460.0" />
+      <point x="-101.25" y="-148.5" />
+    </edge>
+    <edge source="animals.Rhino" target="animals.Pachyderm">
+      <point x="-42.0" y="-76.5" />
+      <point x="529.112493929681" y="2306.0" />
+      <point x="329.39852673368205" y="2306.0" />
+      <point x="30.0" y="15.0" />
+    </edge>
+    <edge source="animals.Canine" target="animals.Animal">
+      <point x="0.0" y="-28.0" />
+      <point x="1343.8333333333335" y="1065.0" />
+      <point x="1509.55622762654" y="1065.0" />
+      <point x="-9.0" y="148.5" />
+    </edge>
+    <edge source="employees.ZooAnnouncer" target="clock.ZooClock">
+      <point x="148.33333333333348" y="-160.5" />
+      <point x="3606.2797930368233" y="1065.0" />
+      <point x="3659.166666666667" y="1065.0" />
+      <point x="-47.0" y="232.5" />
+    </edge>
+    <edge source="zoo.Zoo_Main" target="employees.ZooKeeper">
+      <point x="-59.333333333333485" y="-28.0" />
+      <point x="3525.0860206633624" y="1840.0" />
+      <point x="2601.94645970349" y="1840.0" />
+      <point x="-94.0" y="352.5" />
+    </edge>
+    <edge source="zoo.Zoo_Main" target="clock.ZooClock">
+      <point x="19.77777777777783" y="-28.0" />
+      <point x="3604.1971317744737" y="1820.0" />
+      <point x="3753.166666666667" y="1820.0" />
+      <point x="47.0" y="232.5" />
+    </edge>
+    <edge source="animals.Lion" target="animals.Feline">
+      <point x="0.0" y="-76.5" />
+      <point x="1692.8333333333335" y="1850.0" />
+      <point x="1657.6395609598735" y="1850.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="animals.Pachyderm" target="animals.Animal">
+      <point x="30.0" y="-15.0" />
+      <point x="329.39852673368205" y="2083.0" />
+      <point x="345.56456095987323" y="2083.0" />
+      <point x="345.56456095987323" y="1005.0" />
+      <point x="1401.55622762654" y="1005.0" />
+      <point x="-117.0" y="148.5" />
+    </edge>
+    <edge source="animals.Pachyderm" target="behaviors.Charge">
+      <point x="-30.0" y="-15.0" />
+      <point x="269.39852673368205" y="2083.0" />
+      <point x="199.56456095987323" y="2083.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="clock.Clock" target="observer.iSubject">
+      <point x="0.0" y="-88.0" />
+      <point x="0.0" y="52.0" />
+    </edge>
+    <edge source="employees.ZooFoodServer" target="observer.iSubject">
+      <point x="156.66666666666652" y="-208.5" />
+      <point x="4108.333333333334" y="1065.0" />
+      <point x="4094.139560959873" y="1065.0" />
+      <point x="4094.139560959873" y="194.0" />
+      <point x="3732.2500000000005" y="194.0" />
+      <point x="125.33333333333348" y="52.0" />
+    </edge>
+    <edge source="employees.ZooKeeper" target="clock.ZooClock">
+      <point x="170.909090909091" y="-352.5" />
+      <point x="2866.855550612581" y="1065.0" />
+      <point x="3565.166666666667" y="1065.0" />
+      <point x="-141.0" y="232.5" />
+    </edge>
+    <edge source="animals.Cat" target="animals.Feline">
+      <point x="0.0" y="-76.5" />
+      <point x="1504.8333333333335" y="1850.0" />
+      <point x="1614.9728942932065" y="1850.0" />
+      <point x="-42.66666666666674" y="28.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.9" x="3301.333333333333" y="1649.6666666666665" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
